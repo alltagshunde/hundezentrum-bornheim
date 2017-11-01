@@ -1,0 +1,28 @@
+import index, { query as indexQuery } from './index'
+
+export default (props) => {
+    console.log(props); return index({
+        ...props,
+        noBanner: true
+    })
+}
+
+//export const query = indexQuery 
+
+export const query = graphql`
+  query NoBannerQuery {
+    allMarkdownRemark(filter: {fields: {itemType: {eq: "pages"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
+        edges {
+          node {
+            fields {
+              path
+            }
+            frontmatter {
+              title
+              name
+            }
+          }
+        }
+    }
+  }
+`
