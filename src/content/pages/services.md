@@ -1,10 +1,9 @@
 ---
 title: Angebot
-name: 'services'
+name: services
 position: 30
 sections:
-  -	title: Angebot
-    name: 
-    text: 
-    image_before: '../../assets/img/DSC01487.jpg'
+  - image_before: /static/img/DSC01487.jpg
+    title: Angebot
 ---
+
