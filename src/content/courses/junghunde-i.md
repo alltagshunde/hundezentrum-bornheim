@@ -4,7 +4,7 @@ termin: Samstags 12 Uhr
 price: 20€
 position: 20
 description: In Kooperation mit der Hundeschule Bornheim und der Hundeschule 360° Hund bieten wir verschiedene Gruppenkurse an.
-image: '/src/assets/img/DSC01487.jpg'
+image: '/static/img/DSC01487.jpg'
 ---
 
 ### Junghunde I
