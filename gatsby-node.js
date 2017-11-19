@@ -1,5 +1,5 @@
 const path = require(`path`)
-const fs = require(`fs`)
+const fs = require('fs-extra');
 const {createFilePath} = require(`gatsby-source-filesystem`)
 const _ = require('lodash');
 
@@ -27,6 +27,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 name: `slug`,
                 value: slug === '/home/' ? '/' : slug,
             })
+            console.log('FILE', itemType, slug);
         } else if (node.relativePath.indexOf('assets') === 0) {
             console.log('ASS', node.relativePath);
         }
@@ -38,8 +39,8 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
             Object.keys(node.frontmatter).forEach(key => {
                 if (key.indexOf('image') === 0) {
                     console.log('MD', node.frontmatter[key]);
-                    //if (node.frontmatter[key].indexOf('/src/assets') === 0) {
-                    if (node.frontmatter[key].indexOf('/static/img') === 0) {
+                    if (node.frontmatter[key].indexOf('/src/assets') === 0 ||
+                            node.frontmatter[key].indexOf('/static/img') === 0) {
                         node.frontmatter[key] = '../../..' + node.frontmatter[key];
                         console.log('MD', node.frontmatter[key]);
                     }
@@ -56,7 +57,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 name: `path`,
                 value: slug,
             })
-            console.log(fileNode.fields.itemType, slug)
+            console.log('MD', fileNode.fields.itemType, slug, node.frontmatter)
         }
     }
 }
@@ -99,9 +100,9 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                         layout: node.fields.path === '/' ? 'index' : 'NoBanner'
                     })
 
-                    console.log(node, component)
+                    console.log('PAGE', node, component)
                 } else if (node.fields.itemType === 'courses') {
-                    const slug = node.fields.path.replace('courses', 'services')
+                    const slug = node.fields.path //.replace('courses', 'services')
                     createPage({
                         path: node.fields.path,
                         component: path.resolve(`./src/templates/ServiceItem.jsx`),
@@ -112,10 +113,20 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                         layout: 'NoBanner'
                     })
 
-                    console.log(node, slug)
+                    console.log('COURSE', node, slug)
                 }
             })
             resolve()
         })
     })
 }
+
+exports.onPostBuild = (args, pluginOptions) => {
+    const src = 'src/assets/img';
+    const dst = 'public/static/img'
+
+    return fs.copy(src, dst)
+        .catch((err) => {
+            console.error(src, dst, err);
+        });
+};
