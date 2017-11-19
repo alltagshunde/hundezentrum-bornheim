@@ -38,7 +38,8 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
             Object.keys(node.frontmatter).forEach(key => {
                 if (key.indexOf('image') === 0) {
                     console.log('MD', node.frontmatter[key]);
-                    if (node.frontmatter[key].indexOf('/src/assets') === 0) {
+                    //if (node.frontmatter[key].indexOf('/src/assets') === 0) {
+                    if (node.frontmatter[key].indexOf('/static/img') === 0) {
                         node.frontmatter[key] = '../../..' + node.frontmatter[key];
                         console.log('MD', node.frontmatter[key]);
                     }
