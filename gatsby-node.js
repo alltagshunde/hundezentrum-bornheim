@@ -43,6 +43,18 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                         node.frontmatter[key] = node.frontmatter[key].replace('/static/img', '../../../src/assets/img');
                         console.log('MD', node.frontmatter[key]);
                     }
+                } else if (key === 'sections') {
+                    node.frontmatter.sections.forEach(section => {
+                        Object.keys(section).forEach(skey => {
+                            if (skey.indexOf('image') === 0) {
+                                console.log('MD', section[skey]);
+                                if (section[skey].indexOf('/static/img') === 0) {
+                                    section[skey] = section[skey].replace('/static/img', '../../../src/assets/img');
+                                    console.log('MD', section[skey]);
+                                }
+                            }
+                        });
+                    });
                 }
             });
 
