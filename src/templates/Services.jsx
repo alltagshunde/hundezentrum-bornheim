@@ -4,7 +4,7 @@ import g from 'glamorous'
 import Link from "gatsby-link"
 import { Row, Col } from 'glamorous-grid'
 import Section from '../components/Section'
-import Card, { CardHeader, CardBody, CardFooter } from '../components/Card'
+import Card, { CardHeader, CardBody, CardFooter, CardLink } from '../components/Card'
 
 export default ({data}) => {
     const section = data.markdownRemark.frontmatter.sections[0]
@@ -15,17 +15,19 @@ export default ({data}) => {
                    <Row justifyContent={ { md: 'center' } }>
                        { data.allMarkdownRemark &&
                          data.allMarkdownRemark.edges.map(({node}) => <Col span={ { md: 4 / 12 } } css={ { marginBottom: '1rem' } } key={ node.id }>
-                                                                      <Card>
-                                                                          <CardHeader>
-                                                                              { node.frontmatter.title }
-                                                                          </CardHeader>
-                                                                          <CardBody>
-                                                                              { node.frontmatter.description }
-                                                                          </CardBody>
-                                                                          <CardFooter>
-                                                                              { node.frontmatter.termin }
-                                                                          </CardFooter>
-                                                                      </Card>
+                                                                      <CardLink to={ node.fields.path }>
+                                                                          <Card>
+                                                                              <CardHeader>
+                                                                                  { node.frontmatter.title }
+                                                                              </CardHeader>
+                                                                              <CardBody>
+                                                                                  { node.frontmatter.description }
+                                                                              </CardBody>
+                                                                              <CardFooter>
+                                                                                  { node.frontmatter.termin }
+                                                                              </CardFooter>
+                                                                          </Card>
+                                                                      </CardLink>
                                                                       </Col>
                          ) }
                    </Row>

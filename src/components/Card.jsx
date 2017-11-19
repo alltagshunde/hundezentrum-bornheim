@@ -1,6 +1,7 @@
 import React from "react"
 import glamorous from 'glamorous'
 import { Container, Row, Col } from 'glamorous-grid'
+import Link from "gatsby-link"
 
 const Center = glamorous.div({
     display: 'flex',
@@ -14,7 +15,10 @@ const Card = glamorous(Center)({
     padding: '2rem 1.5rem',
     textAlign: 'center'
 }, ({theme}) => ({
-    borderColor: theme.color.primary
+    borderColor: theme.color.primary,
+    ':hover, &.active': {
+        borderColor: theme.color.secondary
+    }
 }));
 
 const Header = glamorous.h5({
@@ -26,17 +30,23 @@ const Footer = glamorous.div({
     fontSize: '.9rem',
     marginTop: '2rem'
 }, ({theme}) => ({
-    color: theme.color.primary
+    //color: theme.color.primary
 }));
 
 const Hr = glamorous.div({
     width: '66%',
     height: '2rem',
     borderTop: '1px solid'
-}, ({theme}) => ({
-    borderColor: theme.color.primary
-}));
+});
 
+export const CardLink = glamorous(Link)({
+    textDecoration: 'none',
+}, ({theme}) => ({
+    color: theme.color.primary,
+    ':hover, &.active': {
+        color: theme.color.secondary
+    }
+}));
 
 export default ({children}) => <Card>
                                    { children }
