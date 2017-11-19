@@ -1,7 +1,7 @@
 ---
 title: Welpen
 termin: Samstags 10 Uhr
-price: 5er Karte 60 Euro
+price: '5er Karte 60 Euro, Schnupperstunde 10 Euro'
 position: 10
 description: >-
   In Kooperation mit der Hundeschule Bornheim und der Hundeschule 360° Hund
