@@ -2,10 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
-
-media_folder: "src/assets/img/upload"
-public_folder: "../src/assets/img/upload"
+media_folder: "src/assets/img"
 
 collections: 
   - name: "pages"

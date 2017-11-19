@@ -27,11 +27,23 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 name: `slug`,
                 value: slug === '/home/' ? '/' : slug,
             })
+        } else if (node.relativePath.indexOf('assets') === 0) {
+            console.log('ASS', node.relativePath);
         }
     } else if (node.internal.type === `MarkdownRemark`) {
         const fileNode = getNode(node.parent)
         if (fileNode.fields && fileNode.fields.itemType) {
             const slug = node.frontmatter.path && node.frontmatter.path.length ? node.frontmatter.path : fileNode.fields.slug;
+
+            Object.keys(node.frontmatter).forEach(key => {
+                if (key.indexOf('image') === 0) {
+                    console.log('MD', node.frontmatter[key]);
+                    if (node.frontmatter[key].indexOf('/src/assets') === 0) {
+                        node.frontmatter[key] = '../../..' + node.frontmatter[key];
+                        console.log('MD', node.frontmatter[key]);
+                    }
+                }
+            });
 
             createNodeField({
                 node,
