@@ -5,7 +5,9 @@ price: 15 Euro
 position: '70'
 description: >-
   Eine Gruppe speziell für Hunde, die übersteigertes Aggressionsverhalten
-  zeigen. 
+  zeigen. Ziel der Gruppe ist es jedoch, das Aggressionsverhalten in geregelte
+  Bahnen zu lenken und nicht, wie der Name vielleicht vermuten lässt, dass die
+  Hunde sich ungebremst raufen und prügeln dürfen.
 ---
 Hinter dem verspielten Namen Raufergruppe verbirgt sich eine Gruppe speziell für Hunde, die übersteigertes Aggressionsverhalten zeigen. 
 
