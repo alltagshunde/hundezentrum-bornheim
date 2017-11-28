@@ -1,7 +1,7 @@
 ---
 title: Einzelberatung
 name: beratung
-position: '40'
+position: '50'
 sections:
   - text: |-
       blablabla
