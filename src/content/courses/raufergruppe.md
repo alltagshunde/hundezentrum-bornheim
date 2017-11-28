@@ -9,6 +9,7 @@ description: >-
   Verhalten der Hunde in geregelte Bahnen zu lenken und nicht, wie der Name
   vielleicht vermuten lässt, dass die Hunde sich ungebremst raufen und prügeln
   dürfen.
+image: /static/img/2015-08-06-16921.jpg
 ---
 Gemeinsam mit Ihnen wollen wir erreichen, dass…
 
