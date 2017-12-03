@@ -1,6 +1,6 @@
 ---
 title: Agility
-termin: Samstags 15 Uhr
+termin: Ab März 2018 Samstag 15 Uhr
 price: 5er-Karte 75 Euro
 position: '60'
 description: >-
