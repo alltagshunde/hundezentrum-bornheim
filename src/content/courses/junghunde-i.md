@@ -6,7 +6,7 @@ position: 20
 description: >-
   Ausbau und Festigung der Grundkommandos unter Ablenkung, sowie Etablieren
   eines zuverlässigen Rückrufs und Leinenführigkeit.
-image: /static/img/DSC01487.jpg
+image: /static/img/Aris Decke.jpg
 ---
 Der Junghunde Grundkurs umfasst eine Einzel- sowie sechs Gruppenstunden (3-6 Teilnehmer).
 
