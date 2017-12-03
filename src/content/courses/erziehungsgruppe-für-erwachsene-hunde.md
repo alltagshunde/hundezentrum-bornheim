@@ -7,7 +7,7 @@ description: >-
   Übung und Festigung der Erziehung in alltagsnahen Situationen und in
   Anwesenheit anderer Hunde. Zuverlässiger Rückruf, sowie Gehen an lockerer
   Leine in verschiedenen Situationen stehen als Lernziele im Mittelpunkt.
-image: '/static/img/Austral, Maggi, Filou, Pauline.jpg'
+image: /static/img/Aris Decke.jpg
 ---
 Hund und Mensch lernen ihr Leben lang. Neben der Freude am Zusammensein mit dem Hund geht es im Erziehungskurs darum, die Erziehung des Hundes zu trainieren und diese in der Anwesenheit anderer Hunde immer wieder zu üben und zu festigen.
 
