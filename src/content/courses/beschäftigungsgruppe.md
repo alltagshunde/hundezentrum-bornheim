@@ -1,6 +1,6 @@
 ---
 title: Beschäftigungsgruppe
-termin: 'Donnerstags 17:30 Uhr'
+termin: Ab 2018
 price: 5er-Karte 75 Euro
 position: '70'
 description: Ein bunter Mix aus verschiedenen Beschäftigungsarten.
