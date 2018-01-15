@@ -7,6 +7,9 @@ sections:
     title: Team
     name: team
     text: >-
+      ![undefined](/static/img/DSC01535.JPG)
+
+
       ## **Andrea Fricke**
 
 
@@ -29,6 +32,9 @@ sections:
 
 
 
+      ![undefined](/static/img/DSC01648.JPG)
+
+
       ## **Carolin Henseler**
 
 
@@ -47,6 +53,9 @@ sections:
       Austausch mit KollegInnen
 
 
+
+
+      ![undefined](/static/img/DSC01254.JPG)
 
 
       ## **Petra Schauer**
