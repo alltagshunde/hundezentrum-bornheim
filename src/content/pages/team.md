@@ -3,7 +3,8 @@ title: Team
 name: team
 position: '30'
 sections:
-  - title: Team
+  - image_before: /static/img/DSC01535.JPG
+    title: Team
     name: team
     text: >-
       ## **Andrea Fricke**
