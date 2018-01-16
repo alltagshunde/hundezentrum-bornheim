@@ -7,7 +7,7 @@ description: >-
   Die Teilnahme an der Welpengruppe ist für Hunde im Alter von 8 bis ca. 18
   Wochen sinnvoll. Hier steht vor allem das Spielen der Hunde untereinander,
   sowie das Erlernen erster Grundkommandos im Vordergrund. 
-image: /static/img/Welpen Bert.jpeg
+image: /static/img/Welpen.png
 ---
 Die Teilnahme an der Welpengruppe ist für Hunde im Alter von 8 bis ca. 18 Wochen sinnvoll. Hier steht vor allem das Spielen der Hunde untereinander, sowie das Erlernen erster Grundkommandos im Vordergrund. \
 \
