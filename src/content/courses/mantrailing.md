@@ -8,7 +8,7 @@ description: >-
   im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und
   sucht anhand einer Geruchsprobe (z. B. ein Kleidungsstück) eine versteckte
   Person.
-image: /static/img/Mantrailing bearbeitet.jpg
+image: /static/img/Mantrailing.png
 ---
 Unsere Hunde verfügen über einen außergewöhnlichen Geruchssinn, der es ihnen ermöglicht, Menschen aufgrund ihres einzigartigen Geruches voneinander zu unterscheiden und diesen Spuren auf unterschiedlichen Untergründen auch über längere Strecken zu folgen. 
 
