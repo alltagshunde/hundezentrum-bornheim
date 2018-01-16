@@ -3,7 +3,7 @@ title: Seminare & Workshops
 name: seminare
 position: '60'
 sections:
-  - image_before: /static/img/Seminare Foto.JPG
+  - image_before: /static/img/Seminare Team.png
     title: Seminare & Workshops
     name: seminare
     text: >-
@@ -21,6 +21,8 @@ sections:
       * Wie lernt mein Hund?
 
       * Die Körpersprache des Hundes
+
+
 
 
       In Kooperation mit unseren Kolleginnen **Maike Weeber **(Der Waldi -
