@@ -3,7 +3,7 @@ title: Team
 name: team
 position: '30'
 sections:
-  - image_before: /static/img/DSC01494 (2).JPG
+  - image_before: /static/img/Team Hunde.png
     title: Team
     name: team
     text: >-
