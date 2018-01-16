@@ -3,7 +3,7 @@ title: Über uns
 name: about
 position: 20
 sections:
-  - image_before: /static/img/Team Hunde.png
+  - image_before: /static/img/Aktuelles.png
     title: Über uns
     name: überuns
     text: >-
