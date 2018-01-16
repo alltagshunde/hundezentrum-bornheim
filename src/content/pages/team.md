@@ -3,11 +3,11 @@ title: Team
 name: team
 position: '30'
 sections:
-  - image_before: /static/img/DSC01535.JPG
+  - image_before: /static/img/DSC01494.JPG
     title: Team
     name: team
     text: >-
-      ![undefined](/static/img/DSC01535.JPG)
+      ![undefined](/static/img/Andrea Team.jpg)
 
 
       ## **Andrea Fricke**
@@ -32,7 +32,7 @@ sections:
 
 
 
-      ![undefined](/static/img/DSC01648.JPG)
+      ![undefined](/static/img/Caro Webseite.jpg)
 
 
       ## **Carolin Henseler**
@@ -55,7 +55,7 @@ sections:
 
 
 
-      ![undefined](/static/img/DSC01254.JPG)
+      ![undefined](/static/img/Petra Webseite.jpg)
 
 
       ## **Petra Schauer**
