@@ -3,7 +3,7 @@ title: Dogwalking
 name: dogwalking
 position: '60'
 sections:
-  - image_before: /static/img/Dogwalking.png
+  - image_before: /static/img/image-2018-01-16.png
     text: >-
       Mit unserem Gassidienst bieten wir Ihnen Unterstützung, wenn Sie aus
       privaten, gesundheitlichen oder auch beruflichen Gründen zeitlich
