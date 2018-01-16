@@ -3,9 +3,9 @@ title: Über uns
 name: about
 position: 20
 sections:
-  - image_before: /static/img/DSC01487.jpg
+  - image_before: /static/img/Team Hunde.png
     title: Über uns
-    name: bla
+    name: überuns
     text: >-
       Die Hundehaltung sieht heute anders aus als noch vor 30 Jahren. Der
       gesellschaftliche Druck auf Hunde und ihre Halter nimmt stetig zu und der
