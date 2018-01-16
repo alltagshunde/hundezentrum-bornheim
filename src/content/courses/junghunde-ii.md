@@ -4,7 +4,7 @@ termin: Samstags 13 Uhr
 price: 5er-Karte 90 Euro
 position: 30
 description: Weiterer Ausbau und Festigung des bisher erlernten Verhaltens.
-image: '/static/img/Austral, Maggi, Filou, Pauline.jpg'
+image: /static/img/Outdoor Gruppe.png
 ---
 In der offenen Junghundegruppe wird das bereits erlernte Verhalten weiter gefestigt und ausgebaut. \
 Außerdem werden sinnvolle Beschäftigungsmöglichkeiten mit dem Hund exemplarisch erarbeitet. \
