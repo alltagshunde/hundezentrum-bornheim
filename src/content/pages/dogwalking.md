@@ -3,7 +3,8 @@ title: Dogwalking
 name: dogwalking
 position: '60'
 sections:
-  - text: >-
+  - image_before: /static/img/Dogwalking.png
+    text: >-
       Mit unserem Gassidienst bieten wir Ihnen Unterstützung, wenn Sie aus
       privaten, gesundheitlichen oder auch beruflichen Gründen zeitlich
       verhindert sind, Ihrem Hund die angemessene Bewegung zu ermöglichen.
