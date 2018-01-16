@@ -1,7 +1,7 @@
 ---
 title: Seminare & Workshops
 name: seminare
-position: '60'
+position: '80'
 sections:
   - image_before: /static/img/Seminare Team.png
     title: Seminare & Workshops
