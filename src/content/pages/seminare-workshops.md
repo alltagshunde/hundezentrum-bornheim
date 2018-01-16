@@ -3,7 +3,8 @@ title: Seminare & Workshops
 name: seminare
 position: '60'
 sections:
-  - title: Seminare & Workshops
+  - image_before: /static/img/Seminare Foto.JPG
+    title: Seminare & Workshops
     name: seminare
     text: >-
       ## **Seminare & Workshops **
@@ -20,6 +21,21 @@ sections:
       * Wie lernt mein Hund?
 
       * Die Körpersprache des Hundes
+
+
+      In Kooperation mit unseren Kolleginnen **Maike Weeber **(Der Waldi -
+      Hundefutterladen in Bornheim-Brenig) und **Janina Nowak** (Tierheilpraxis
+      & Physiotherapie) bieten wir Ihnen außerdem weitere interessante Seminare
+      und Workshops zu Themen wie:
+
+
+      * Die Ernährung des Hundes
+
+      * BARF Infoabende
+
+      * Massageworkshops für Hundehalter
+
+      * Krankheiten des Bewegungsapparats beim Hund
 
 
       Für mehr Informationen, sowie aktuelle Termine sprechen Sie uns gerne an
