@@ -1,10 +1,11 @@
 ---
 title: Aktuelles
-name: 'news'
-path: /
+name: news
 position: 10
+path: /
 sections:
-  -	title: Aktuelles
+  - image_before: /static/img/Aktuelles.png
+    title: Aktuelles
     name: news
-    text: 
 ---
+
