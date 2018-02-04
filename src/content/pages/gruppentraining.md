@@ -1,11 +1,9 @@
 ---
 title: Gruppentraining
-name: gruppentraining
+name: services
 position: '40'
 sections:
   - title: Gruppentraining
     name: gruppentraining
-    text: >-
-      ## **Gruppentraining**
 ---
 

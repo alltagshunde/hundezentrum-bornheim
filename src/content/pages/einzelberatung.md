@@ -1,9 +1,11 @@
 ---
-title: Einzelberatung
+title: Beratung
 name: beratung
 position: '50'
 sections:
-  - text: >-
+  - title: Einzelberatung
+    name: beratung
+    text: >-
       Zeigt Ihr Hund im Alltag unerwünschtes oder problematisches Verhalten
       lassen sich diese Probleme aufgrund der Einzigartigkeit jeder Beziehung am
       effektivsten in der Einzelberatung lösen.
@@ -58,6 +60,5 @@ sections:
 
 
       [www.360-hundeschule.de](www.360-hundeschule.de)
-    title: Einzelberatung
 ---
 

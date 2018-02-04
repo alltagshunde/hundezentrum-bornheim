@@ -1,15 +1,12 @@
 ---
-title: Seminare & Workshops
+title: Seminare
 name: seminare
 position: '80'
 sections:
   - image_before: /static/img/image-2018-01-22.png
-    title: Seminare & Workshops
     name: seminare
+    title: Seminare & Workshops
     text: >-
-      ## **Seminare & Workshops **
-
-
       In regelmäßigen Abständen bieten wir Themenabende, Workshops und Seminare
       u.a. zu folgenden Themen an: 
 
@@ -23,9 +20,7 @@ sections:
       * Die Körpersprache des Hundes
 
 
-
-
-      In Kooperation mit unseren Kolleginnen **Maike Weeber **(Der Waldi -
+      In Kooperation mit unseren Kolleginnen **Maike Weeber** (Der Waldi -
       Hundefutterladen in Bornheim-Brenig) und **Janina Nowak** (Tierheilpraxis
       & Physiotherapie) bieten wir Ihnen außerdem weitere interessante Seminare
       und Workshops zu Themen wie:
