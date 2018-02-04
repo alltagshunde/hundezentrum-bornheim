@@ -69,7 +69,7 @@ export const query = graphql`
           }
         }
     }
-    file(relativePath: { eq: "assets/img/DSC01648.jpg"}) {
+    file(relativePath: { eq: "assets/img/pexels-photo-406014.jpg"}) {
       childImageSharp {
       sizes(maxWidth: 1600) {
           # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
