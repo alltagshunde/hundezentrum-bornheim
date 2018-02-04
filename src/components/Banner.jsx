@@ -8,7 +8,7 @@ import Logo from "../components/Logo"
 
 import logo from '../assets/img/Logo_Hundezentrum_Bornheim.png'
 import logo_inverted from '../assets/img/Logo_Hundezentrum_Bornheim_inverted.png'
-import front from '../assets/img/DSC01648.jpg'
+//import front from '../assets/img/DSC01648.jpg'
 
 import { noOuterGutter } from "../theme/grid"
 import theme from "../theme"

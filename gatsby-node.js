@@ -15,7 +15,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 getNode,
                 basePath: basePath
             })
-            slug = slug.replace('/courses/', '/services/')
+            slug = slug.replace('/courses/', '/gruppentraining/')
 
             createNodeField({
                 node,
@@ -65,6 +65,11 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
             })
             createNodeField({
                 node,
+                name: `navEntry`,
+                value: fileNode.fields.itemType === 'pages' && slug !== '/legal/' && slug !== '/privacy/' ? 'menu' : 'footer',
+            })
+            createNodeField({
+                node,
                 name: `path`,
                 value: slug,
             })
@@ -96,6 +101,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
     `).then(result => {
             result.data.allMarkdownRemark.edges.map(({node}) => {
                 if (node.fields.itemType === 'pages') {
+                    // loads e.g. Services.jsx or News.jsx
                     let component = path.resolve(`./src/templates/${_.startCase(node.frontmatter.name)}.jsx`)
                     if (!fs.existsSync(component)) {
                         component = path.resolve(`./src/templates/Page.jsx`)

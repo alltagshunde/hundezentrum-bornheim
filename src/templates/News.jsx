@@ -1,5 +1,7 @@
 import React from "react"
 import g from 'glamorous'
+var MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
 
 import Link from "gatsby-link"
 import { Row, Col } from 'glamorous-grid'
@@ -7,6 +9,9 @@ import Section from '../components/Section'
 
 export default ({data}) => <div>
                                <Section title={ data.markdownRemark.frontmatter.sections[0].title } name={ data.markdownRemark.frontmatter.sections[0].name }>
+                                   <div dangerouslySetInnerHTML={ { __html: md.render(data.markdownRemark.frontmatter.sections[0].text) } } />
+                               </Section>
+                               <Section title={ data.markdownRemark.frontmatter.sections[1].title } name={ data.markdownRemark.frontmatter.sections[1].name }>
                                    { data.allMarkdownRemark.edges.map(({node}) => <Row key={ node.id }>
                                                                                       <Col css={ { textAlign: 'center' } }>
                                                                                       { /*<Link to={ node.fields.path } css={ { textDecoration: `none`, color: `inherit` } }>*/ }
@@ -30,15 +35,16 @@ export const query = graphql`
       frontmatter {
         title
         sections {
-        	title
-        	name
+          title
+          name
+          text
         }
       }
     }
     allMarkdownRemark(filter: {fields: {itemType: {eq: "news"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
-          	id
+            id
             fields {
               path
             }

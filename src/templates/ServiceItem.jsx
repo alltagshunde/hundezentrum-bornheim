@@ -27,21 +27,21 @@ export default ({data}) => <div>
 export const query = graphql`
   query ServiceItemQuery($path: String!) {
     markdownRemark(fields: { path: { eq: $path } }) {
-    	fields {
-    		path
-    	}
+      fields {
+        path
+      }
       html
       frontmatter {
         title
         termin
         price
         image {
-            childImageSharp {
-              sizes {
-                ...GatsbyImageSharpSizes_withWebp
-              }
+          childImageSharp {
+            sizes {
+              ...GatsbyImageSharpSizes_withWebp
             }
           }
+        }
       }
     }
   }

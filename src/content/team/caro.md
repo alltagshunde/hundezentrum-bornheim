@@ -1,0 +1,15 @@
+---
+title: Carolin Henseler
+position: '20'
+description:
+image: /static/img/DSC01648.jpg
+---
+**Ausbildung & Qualifikation**
+
+Absolventin des CANIS-Studiums zur Hundetrainerin & Verhaltensberaterin bei CANIS-Zentrum für Kynologie
+
+Diverse Praktika (u.a. Tierheim des Vereins Tiere in Not Odenwald e. V., Tierheim Lübeck und Hundezentrum Mittelfranken)
+
+Dipl. Betriebswirtin (FH)
+
+Fortlaufende Weiterbildung durch Seminare, Workshops und fachlichen Austausch mit KollegInnen

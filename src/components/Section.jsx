@@ -20,7 +20,7 @@ export default ({title, name, children, cssover}) => {
     return (
         <div>
             <a name={ name } id={ name }></a>
-            <Container css={ { paddingTop: '5rem', paddingBottom: '5rem' } }>
+            <Container css={ { paddingTop: '3rem', paddingBottom: '3rem' } }>
                 <Row>
                     <Col span={ { md: 4 / 12 } } offset={ { md: 4 / 12 } } css={ { display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '4rem', ...cssover } }>
                     <h3 css={ { textTransform: 'uppercase' } }>{ title }</h3>

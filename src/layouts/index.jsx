@@ -56,7 +56,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(filter: {fields: {itemType: {eq: "pages"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
+    allMarkdownRemark(filter: {fields: {navEntry: {eq: "menu"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
         edges {
           node {
             fields {
