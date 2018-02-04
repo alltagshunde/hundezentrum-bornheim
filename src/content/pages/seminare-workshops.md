@@ -3,7 +3,7 @@ title: Seminare & Workshops
 name: seminare
 position: '80'
 sections:
-  - image_before: /static/img/Seminare_Team.png
+  - image_before: /static/img/image-2018-01-22.png
     title: Seminare & Workshops
     name: seminare
     text: >-
