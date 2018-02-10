@@ -16,7 +16,7 @@ export default ({title, name, children, cssover}) => {
         paddingBottom: '5rem',
         ...cssover
     };
-    console.log('CSS', css2)
+
     return (
         <div>
             <a name={ name } id={ name }></a>

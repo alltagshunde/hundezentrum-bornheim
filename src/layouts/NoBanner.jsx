@@ -1,7 +1,7 @@
 import index, { query as indexQuery } from './index'
 
 export default (props) => {
-    console.log(props); return index({
+    return index({
         ...props,
         noBanner: true
     })

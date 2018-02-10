@@ -58,16 +58,16 @@ const NavLink = glamorous(Link)({
 
 
 export default ({routes}) => {
-    console.log('DT', routes); return <Navbar>
-                                          <NavContent>
-                                              <Nav>
-                                                  { routes.map(route => <li key={ route.path } css={ { margin: 0 } }>
-                                                                            <NavLink to={ route.path } exact={ route.path === '/' } activeClassName="active">
-                                                                                { route.label }
-                                                                            </NavLink>
-                                                                        </li>) }
-                                              </Nav>
-                                          </NavContent>
-                                      </Navbar>
+    return <Navbar>
+               <NavContent>
+                   <Nav>
+                       { routes.map(route => <li key={ route.path } css={ { margin: 0 } }>
+                                                 <NavLink to={ route.path } exact={ route.path === '/' } activeClassName="active">
+                                                     { route.label }
+                                                 </NavLink>
+                                             </li>) }
+                   </Nav>
+               </NavContent>
+           </Navbar>
 }
 
