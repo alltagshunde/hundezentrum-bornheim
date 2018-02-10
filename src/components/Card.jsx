@@ -13,13 +13,9 @@ const Center = glamorous.div({
 const Card = glamorous(Center)({
     border: '1px solid',
     padding: '2rem 1.5rem',
-    textAlign: 'center'
-}, ({theme}) => ({
-    borderColor: theme.color.primary,
-    ':hover, &.active': {
-        borderColor: theme.color.secondary
-    }
-}));
+    textAlign: 'center',
+    minHeight: '100%'
+});
 
 const Header = glamorous.h5({
     textTransform: 'uppercase',
@@ -39,18 +35,30 @@ const Hr = glamorous.div({
     borderTop: '1px solid'
 });
 
+const Hr2 = glamorous.div({
+    width: '66%',
+    height: '2rem',
+    borderBottom: '1px solid',
+    marginBottom: '1rem'
+});
+
+export const CardBody = glamorous.div({
+});
+
 export const CardLink = glamorous(Link)({
     textDecoration: 'none',
+    width: '100%'
 }, ({theme}) => ({
     color: theme.color.primary,
     ':hover, &.active': {
-        color: theme.color.secondary
+        color: theme.color.accent
     }
 }));
 
-export default ({children}) => <Card>
-                                   { children }
-                               </Card>
+export default Card
+//export default ({children}) => <Card>
+//                                   { children }
+//                               </Card>
 
 export const CardHeader = ({children}) => <Center>
                                               <Header>
@@ -59,10 +67,7 @@ export const CardHeader = ({children}) => <Center>
                                               <Hr/>
                                           </Center>
 
-export const CardBody = ({children}) => <div>
-                                            { children }
-                                        </div>
-
-export const CardFooter = ({children}) => <Footer>
-                                              { children }
-                                          </Footer>
+export const CardFooter = ({children}) => <Center>
+                                              <Hr2/>
+                                              <h6 css={ { textTransform: 'uppercase', marginBottom: '0' } }>{ children }</h6>
+                                          </Center>

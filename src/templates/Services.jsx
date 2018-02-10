@@ -1,10 +1,19 @@
 import React from "react"
-import g from 'glamorous'
+import glamorous from 'glamorous'
 
 import Link from "gatsby-link"
 import { Row, Col } from 'glamorous-grid'
 import Section from '../components/Section'
 import Card, { CardHeader, CardBody, CardFooter, CardLink } from '../components/Card'
+
+const StretchCard = glamorous(Card)({
+    justifyContent: 'space-between'
+}, ({theme}) => ({
+    borderColor: theme.color.primary,
+    ':hover, &.active': {
+        borderColor: theme.color.accent
+    }
+}));
 
 export default ({data}) => {
     const section = data.markdownRemark.frontmatter.sections[0]
@@ -14,9 +23,9 @@ export default ({data}) => {
                <Section title={ section.title } name={ section.name }>
                    <Row justifyContent={ { md: 'center' } }>
                        { data.allMarkdownRemark &&
-                         data.allMarkdownRemark.edges.map(({node}) => <Col span={ { md: 4 / 12 } } css={ { marginBottom: '1rem' } } key={ node.id }>
+                         data.allMarkdownRemark.edges.map(({node}) => <Col span={ { md: 6 / 12, lg: 4 / 12 } } css={ { marginBottom: '1rem' } } key={ node.id }>
                                                                       <CardLink to={ node.fields.path }>
-                                                                          <Card>
+                                                                          <StretchCard>
                                                                               <CardHeader>
                                                                                   { node.frontmatter.title }
                                                                               </CardHeader>
@@ -26,7 +35,7 @@ export default ({data}) => {
                                                                               <CardFooter>
                                                                                   { node.frontmatter.termin }
                                                                               </CardFooter>
-                                                                          </Card>
+                                                                          </StretchCard>
                                                                       </CardLink>
                                                                       </Col>
                          ) }

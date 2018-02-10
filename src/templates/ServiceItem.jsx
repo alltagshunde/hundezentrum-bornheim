@@ -10,16 +10,20 @@ export default ({data}) => <div>
                                  <div css={ { height: '500px', backgroundImage: `url("${data.markdownRemark.frontmatter.image.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                                <Section title={ data.markdownRemark.frontmatter.title } name={ data.markdownRemark.fields.path } cssover={ { marginBottom: '1rem' } }>
                                    <Row>
-                                       <Col span={ { md: 4 / 12 } } offset={ { md: 4 / 12 } } css={ { display: 'flex', justifyContent: 'space-between' } }>
+                                       <Col span={ { md: 8 / 12, lg: 6 / 12, xl: 4 / 12 } } offset={ { md: 2 / 12, lg: 3 / 12, xl: 4 / 12 } } css={ { display: 'flex', justifyContent: 'space-between' } }>
                                        <span css={ { fontWeight: 'bold' } }>Wann</span><span>{ data.markdownRemark.frontmatter.termin }</span>
                                        </Col>
                                    </Row>
                                    <Row css={ { marginBottom: '2rem' } }>
-                                       <Col span={ { md: 4 / 12 } } offset={ { md: 4 / 12 } } css={ { display: 'flex', justifyContent: 'space-between' } }>
-                                       <span css={ { fontWeight: 'bold' } }>Was kostet es</span><span>{ data.markdownRemark.frontmatter.price }</span>
+                                       <Col span={ { md: 8 / 12, lg: 6 / 12, xl: 4 / 12 } } offset={ { md: 2 / 12, lg: 3 / 12, xl: 4 / 12 } } css={ { display: 'flex', justifyContent: 'space-between' } }>
+                                       <span css={ { fontWeight: 'bold', whiteSpace: 'nowrap', paddingRight: '1rem' } }>Was kostet es</span><span>{ data.markdownRemark.frontmatter.price }</span>
                                        </Col>
                                    </Row>
-                                   <div dangerouslySetInnerHTML={ { __html: data.markdownRemark.html } } />
+                                   <Row>
+                                       <Col>
+                                       <div css={ { textAlign: 'center' } } dangerouslySetInnerHTML={ { __html: data.markdownRemark.html } } />
+                                       </Col>
+                                   </Row>
                                </Section>
                            </div>
 

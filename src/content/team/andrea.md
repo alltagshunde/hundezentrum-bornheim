@@ -2,6 +2,9 @@
 title: Andrea Fricke
 position: '10'
 description:
+phone: 0151 / 40155575
+site: http://www.hundeschule-bornheim.de
+sitename: www.hundeschule-bornheim.de
 image: /static/img/DSC01535.jpg
 ---
 **Ausbildung & Qualifikation**

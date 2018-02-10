@@ -2,6 +2,9 @@
 title: Carolin Henseler
 position: '20'
 description:
+phone: 0176 / 61711772
+site: http://www.alltagshunde-bonn.de
+sitename: www.alltagshunde-bonn.de
 image: /static/img/DSC01648.jpg
 ---
 **Ausbildung & Qualifikation**

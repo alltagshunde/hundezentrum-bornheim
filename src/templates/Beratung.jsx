@@ -1,5 +1,7 @@
 import React from "react"
 import glamorous from 'glamorous'
+var MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
 
 import Img from 'gatsby-image'
 import Link from "gatsby-link"
@@ -13,12 +15,22 @@ const CardPrimary = glamorous(Card)({
     color: theme.color.primary
 }));
 
+const Href = glamorous.a({
+    textDecoration: 'none'
+}, ({theme}) => ({
+    color: theme.color.primary,
+    ':hover, &.active': {
+        color: theme.color.accent
+    }
+}));
+
 export default ({data}) => {
     const section = data.markdownRemark.frontmatter.sections[0]
     return <div>
                { section.image_before && // TODO: use sizes with media-query, factor out to parallax component 
                  <div css={ { height: '500px', backgroundImage: `url("${section.image_before.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                <Section title={ section.title } name={ section.name }>
+                   <div dangerouslySetInnerHTML={ { __html: md.render(section.text) } } />
                    <Row justifyContent={ { md: 'center' } }>
                        { data.allMarkdownRemark &&
                          data.allMarkdownRemark.edges.map(({node}) => <Col span={ { md: 6 / 12, lg: 4 / 12 } } css={ { marginBottom: '1rem' } } key={ node.id }>
@@ -27,8 +39,15 @@ export default ({data}) => {
                                                                               { node.frontmatter.title }
                                                                           </CardHeader>
                                                                           <CardBody>
-                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginBottom: '1rem' } } />
-                                                                              <div dangerouslySetInnerHTML={ { __html: node.html } } />
+                                                                              <div>
+                                                                                  { node.frontmatter.phone }
+                                                                              </div>
+                                                                              <div>
+                                                                                  <Href href={ node.frontmatter.site } target="_blank">
+                                                                                      { node.frontmatter.sitename }
+                                                                                  </Href>
+                                                                              </div>
+                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginTop: '1rem' } } />
                                                                           </CardBody>
                                                                       </CardPrimary>
                                                                       </Col>
@@ -41,7 +60,7 @@ export default ({data}) => {
 //export const query = pageQuery
 
 export const query = graphql`
-  query TrainerQuery($path: String!) {
+  query BeratungQuery($path: String!) {
     markdownRemark(fields: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -49,6 +68,7 @@ export const query = graphql`
         sections {
           title
           name
+          text
           image_before {
             childImageSharp {
               sizes {
@@ -69,6 +89,9 @@ export const query = graphql`
             frontmatter {
               title
               description
+              phone
+              site
+              sitename
               image {
               childImageSharp {
                 sizes {

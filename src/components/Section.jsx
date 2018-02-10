@@ -22,7 +22,7 @@ export default ({title, name, children, cssover}) => {
             <a name={ name } id={ name }></a>
             <Container css={ { paddingTop: '3rem', paddingBottom: '3rem' } }>
                 <Row>
-                    <Col span={ { md: 4 / 12 } } offset={ { md: 4 / 12 } } css={ { display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '4rem', ...cssover } }>
+                    <Col span={ { md: 8 / 12, lg: 6 / 12, xl: 4 / 12 } } offset={ { md: 2 / 12, lg: 3 / 12, xl: 4 / 12 } } css={ { display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '4rem', ...cssover } }>
                     <h3 css={ { textTransform: 'uppercase' } }>{ title }</h3>
                     <Hr/>
                     </Col>

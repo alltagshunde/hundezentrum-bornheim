@@ -33,32 +33,5 @@ sections:
 
       Um einen Termin zu vereinbaren kontaktieren Sie uns gerne telefonisch. Für
       mehr Informationen besuchen Sie gerne auch die einzelnen Webseiten:
-
-
-      ![undefined](/static/img/Andrea.png)
-
-
-      ## **Andrea Fricke: 0151 / 40155575**
-
-
-      [www.hundeschule-bornheim.de](www.hundeschule-bornheim.de)
-
-
-      ![undefined](/static/img/Caro.png)
-
-
-      ## **Carolin Henseler: 0176 / 61711772**
-
-
-      [www.alltagshunde-bonn.de](www.alltagshunde-bonn.de)
-
-
-      ![undefined](/static/img/Petra.png)
-
-
-      ## **Petra Schauer:** **0163 / 4817487**
-
-
-      [www.360-hundeschule.de](www.360-hundeschule.de)
 ---
 
