@@ -6,6 +6,5 @@ position: '100'
 description: >-
   In der Outdoor Gruppe werden die Inhalte aus der offenen Junghundegruppe
   überpüft und gefestigt. 
-image: /static/img/Profis_Hunde.png
 ---
 In der Outdoor Gruppe werden die Inhalte aus der offenen Junghundegruppe überpüft und gefestigt.  Trainiert wird nun ohne die Sicherheit des eingezäunten Hundeplatzes und mit hohem Alltagsbezug an unterschiedlichen Orten in und um Bornheim. W
