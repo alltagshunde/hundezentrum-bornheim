@@ -7,3 +7,7 @@ yarn-error.log
 *~
 *.sublime-project
 *.sublime-workspace
+img2/
+img3/
+static/
+
