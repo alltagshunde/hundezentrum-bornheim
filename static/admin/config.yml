@@ -15,7 +15,7 @@ collections:
       - {label: Name, name: name, widget: string}
       - {label: Position, name: position, widget: number}
       - {label: Path, name: path, widget: hidden}
-      - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Name, name: name, widget: string}, {label: Text, name: text, widget: markdown}, {label: Image, name: image_before, widget: image}]}
+      - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Name, name: name, widget: string}, {label: Text, name: text, widget: markdown}, {label: Image, name: image_before, widget: image, required: false}]}
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "News" # Used in the UI, ie.: "New Post"
     folder: "src/content/news" # The path to the folder where the documents are stored

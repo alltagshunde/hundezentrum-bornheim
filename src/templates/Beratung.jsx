@@ -47,7 +47,7 @@ export default ({data}) => {
                                                                                       { node.frontmatter.sitename }
                                                                                   </Href>
                                                                               </div>
-                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginTop: '1rem' } } />
+                                                                              { node.frontmatter.image && <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginTop: '1rem' } } /> }
                                                                           </CardBody>
                                                                       </CardPrimary>
                                                                       </Col>
@@ -69,13 +69,6 @@ export const query = graphql`
           title
           name
           text
-          image_before {
-            childImageSharp {
-              sizes {
-                ...GatsbyImageSharpSizes_withWebp
-              }
-            }
-          }
         }
       }
     }
@@ -92,13 +85,6 @@ export const query = graphql`
               phone
               site
               sitename
-              image {
-              childImageSharp {
-                sizes {
-                  ...GatsbyImageSharpSizes_withWebp
-                }
-              }
-            }
             }
             html
           }
