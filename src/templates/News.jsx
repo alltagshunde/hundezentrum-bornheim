@@ -11,19 +11,6 @@ export default ({data}) => <div>
                                <Section title={ data.markdownRemark.frontmatter.sections[0].title } name={ data.markdownRemark.frontmatter.sections[0].name }>
                                    <div dangerouslySetInnerHTML={ { __html: md.render(data.markdownRemark.frontmatter.sections[0].text) } } />
                                </Section>
-                               <Section title={ data.markdownRemark.frontmatter.sections[1].title } name={ data.markdownRemark.frontmatter.sections[1].name }>
-                                   { data.allMarkdownRemark.edges.map(({node}) => <Row key={ node.id }>
-                                                                                      <Col css={ { textAlign: 'center' } }>
-                                                                                      { /*<Link to={ node.fields.path } css={ { textDecoration: `none`, color: `inherit` } }>*/ }
-                                                                                      <h4 css={ { fontSize: '1.1rem', marginBottom: '1.1rem' } }>{ node.frontmatter.title }<span css={ { color: "#BBB", fontSize: '1rem', paddingLeft: '1rem' } }>{ node.frontmatter.date }</span></h4>
-                                                                                      <p>
-                                                                                          { node.excerpt }
-                                                                                      </p>
-                                                                                      { /*</Link>*/ }
-                                                                                      </Col>
-                                                                                  </Row>
-                                     ) }
-                               </Section>
                            </div>
 
 //export const query = pageQuery

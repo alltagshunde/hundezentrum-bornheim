@@ -5,6 +5,8 @@ description:
 phone: 0151 / 40155575
 site: http://www.hundeschule-bornheim.de
 sitename: www.hundeschule-bornheim.de
+dogwalking: false
+area:
 image: /static/img/DSC01535.jpg
 ---
 **Ausbildung & Qualifikation**

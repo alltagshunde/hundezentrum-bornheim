@@ -5,6 +5,8 @@ description:
 phone: 0163 / 4817487
 site: http://www.360-hundeschule.de
 sitename: www.360-hundeschule.de
+dogwalking: true
+area: 'Raum Bornheim & Wesseling'
 image: /static/img/DSC01254.jpg
 ---
 **Ausbildung & Qualifikation**

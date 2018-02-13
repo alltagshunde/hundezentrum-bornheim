@@ -18,11 +18,20 @@ const StyledCol = glamorous(Col)({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingTop: '2rem'
 }, ({theme}) => ({
     color: theme.inverted ? theme.color.primary : theme.color.lighter,
     backgroundColor: theme.inverted ? theme.color.lighter : theme.color.primary
 }));
+
+const BottomCol = glamorous(Col)({
+    //padding: '0 !important'
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'end',
+    alignItems: 'end'
+});
 
 const StyledRow = glamorous(Row)({
     margin: '0 !important'
@@ -40,9 +49,9 @@ const ban = css({
 })
 
 export default ({sizes}) => <Container fluid px="0 !important">
-                                <Row noGutters={ true }>
-                                    <Col span={ { md: 6 / 12 } }>
-                                    <Img sizes={ sizes } />
+                                <Row noGutters={ true } css={ { backgroundColor: '#fafafa' } }>
+                                    <Col span={ { md: 6 / 12 } } alignSelf="end">
+                                    <Img sizes={ sizes } css={ { marginTop: 'auto' } } />
                                     </Col>
                                     <StyledCol span={ { md: 6 / 12 } }>
                                         <img src={ theme.inverted ? logo : logo_inverted } css={ { width: '80%', margin: 0 } } />

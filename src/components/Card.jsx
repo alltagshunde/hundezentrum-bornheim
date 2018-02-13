@@ -43,6 +43,7 @@ const Hr2 = glamorous.div({
 });
 
 export const CardBody = glamorous.div({
+    width: '100%'
 });
 
 export const CardLink = glamorous(Link)({

@@ -51,31 +51,5 @@ sections:
 
 
       **Sprechen Sie uns gerne an – Wir freuen uns auf Sie und Ihren Hund!**
-
-
-
-
-      **Raum Bornheim & Wesseling:**
-
-
-      Petra Schauer\
-
-      Mobil: 0163 / 4817487
-
-
-      ![undefined](/static/img/Petra.png)
-
-
-
-
-      **Raum Bonn, Meckenheim & Wachtberg:**
-
-
-      Carolin Henseler\
-
-      Mobil: 0176 / 61711772
-
-
-      ![undefined](/static/img/Caro.png)
 ---
 

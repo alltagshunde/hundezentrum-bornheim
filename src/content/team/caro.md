@@ -5,6 +5,8 @@ description:
 phone: 0176 / 61711772
 site: http://www.alltagshunde-bonn.de
 sitename: www.alltagshunde-bonn.de
+dogwalking: true
+area: 'Raum Bonn, Meckenheim & Wachtberg'
 image: /static/img/DSC01648.jpg
 ---
 **Ausbildung & Qualifikation**

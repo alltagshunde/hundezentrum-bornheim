@@ -31,26 +31,31 @@ export default ({data}) => {
                  <div css={ { height: '500px', backgroundImage: `url("${section.image_before.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                <Section title={ section.title } name={ section.name }>
                    <div dangerouslySetInnerHTML={ { __html: md.render(section.text) } } />
-                   <Row justifyContent={ { md: 'center' } }>
+                   <Row justifyContent="start">
                        { data.allMarkdownRemark &&
-                         data.allMarkdownRemark.edges.map(({node}) => <Col span={ { md: 6 / 12, lg: 4 / 12 } } css={ { marginBottom: '1rem' } } key={ node.id }>
-                                                                      <CardPrimary>
-                                                                          <CardHeader>
-                                                                              { node.frontmatter.title }
-                                                                          </CardHeader>
-                                                                          <CardBody>
-                                                                              <div>
-                                                                                  { node.frontmatter.phone }
-                                                                              </div>
-                                                                              <div>
-                                                                                  <Href href={ node.frontmatter.site } target="_blank">
-                                                                                      { node.frontmatter.sitename }
-                                                                                  </Href>
-                                                                              </div>
-                                                                              { node.frontmatter.image && <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginTop: '1rem' } } /> }
-                                                                          </CardBody>
-                                                                      </CardPrimary>
-                                                                      </Col>
+                         data.allMarkdownRemark.edges
+                             .filter(({node}) => node.frontmatter.dogwalking)
+                             .map(({node}) => <Col span={ { md: 6 / 12, lg: 4 / 12 } } css={ { marginBottom: '1rem' } } key={ node.id }>
+                                              <CardPrimary>
+                                                  <CardHeader>
+                                                      { node.frontmatter.title }
+                                                  </CardHeader>
+                                                  <CardBody>
+                                                      <div>
+                                                          { node.frontmatter.area }
+                                                      </div>
+                                                      <div>
+                                                          { node.frontmatter.phone }
+                                                      </div>
+                                                      <div>
+                                                          <Href href={ node.frontmatter.site } target="_blank">
+                                                              { node.frontmatter.sitename }
+                                                          </Href>
+                                                      </div>
+                                                      { node.frontmatter.image && <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginTop: '1rem' } } /> }
+                                                  </CardBody>
+                                              </CardPrimary>
+                                              </Col>
                          ) }
                    </Row>
                </Section>
@@ -60,7 +65,7 @@ export default ({data}) => {
 //export const query = pageQuery
 
 export const query = graphql`
-  query BeratungQuery($path: String!) {
+  query DogwalkingQuery($path: String!) {
     markdownRemark(fields: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -92,6 +97,8 @@ export const query = graphql`
               phone
               site
               sitename
+              dogwalking
+              area
               image {
                 childImageSharp {
                   sizes {

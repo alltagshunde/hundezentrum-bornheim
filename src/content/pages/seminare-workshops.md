@@ -3,8 +3,7 @@ title: Seminare
 name: seminare
 position: '80'
 sections:
-  - image_before: /static/img/image-2018-01-22.png
-    name: seminare
+  - name: seminare
     title: Seminare & Workshops
     text: >-
       In regelmäßigen Abständen bieten wir Themenabende, Workshops und Seminare
