@@ -15,16 +15,16 @@ sections:
       sind in der Regel (fast) überall gern gesehene Gäste.
 
 
-      Notwendig für eine klare Beziehung, in der Grenzen akzeptiert und
-      Freiheiten gewährt werden können, sind neben der Liebe zum Tier auch
-      Auseinandersetzung und Verständnis für die Bedürfnisse beider Seiten.
-      Wichtig ist neben Durchsetzungsvermögen auch die Leichtigkeit und Freude
-      im täglichen Zusammenleben. 
+      Notwendig für eine klare Beziehung, in der Grenzen akzeptiert und dem Hund
+      Freiheiten gewährt werden können, sind neben der Liebe zum Tier aber auch
+      Auseinandersetzung mit und Verständnis für die Bedürfnisse beider Seiten.
+      Wichtig sind neben Grenzen und Durchsetzungsvermögen vor allem auch
+      Leichtigkeit und Freude im täglichen Zusammenleben. 
 
 
       Auf dem Weg dorthin möchten wir Sie und Ihren Hund gerne begleiten und
-      unterstützen. Im Vordergrund steht dabei statt vielfältiger Hilfsmittel,
-      die soziale Beziehung zwischen Ihnen und Ihrem Hund.
+      unterstützen. Im Vordergrund steht für uns dabei statt vielfältiger
+      Hilfsmittel, die soziale Beziehung zwischen Ihnen und Ihrem Hund.
   - title: Aktuelles
     name: news
 ---
