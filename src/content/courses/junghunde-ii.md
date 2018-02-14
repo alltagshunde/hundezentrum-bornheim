@@ -1,6 +1,6 @@
 ---
 title: Offene Junghundegruppe
-termin: Samstags 13 Uhr
+termin: 'Samstags 13:00 Uhr'
 price: 5er-Karte 90 Euro
 position: 30
 description: Weiterer Ausbau und Festigung des bisher erlernten Verhaltens.
