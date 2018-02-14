@@ -1,8 +1,8 @@
 ---
-title: Agility
-termin: Ab März 2018 Samstag 15 Uhr
+title: Agility Anfänger
+termin: 'Ab April 2018 '
 price: 5er-Karte 75 Euro
-position: '60'
+position: '90'
 description: >-
   Agility schult den Mensch in seiner Körpersprache gegenüber dem Hund und
   fördert die harmonische Zusammenarbeit zwischen Mensch und Hund.
