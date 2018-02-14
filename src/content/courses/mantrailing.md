@@ -2,7 +2,7 @@
 title: Mantrailing
 termin: ab Frühjahr 2018
 price: 5er-Karte 100 Euro
-position: '90'
+position: '70'
 description: >-
   Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund
   im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und
