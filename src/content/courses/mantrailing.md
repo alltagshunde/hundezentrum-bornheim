@@ -1,7 +1,7 @@
 ---
 title: Mantrailing
-termin: ab Frühjahr 2018
-price: 5er-Karte 100 Euro
+termin: ab April 2018
+price: 'Einsteigerkurs 110 Euro (1x Theorie, 4 x Praxis a ca. 2 Stunden)'
 position: '70'
 description: >-
   Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund
@@ -10,8 +10,12 @@ description: >-
   Person.
 image: /static/img/image-2018-02-14.png
 ---
-Unsere Hunde verfügen über einen außergewöhnlichen Geruchssinn, der es ihnen ermöglicht, Menschen aufgrund ihres einzigartigen Geruches voneinander zu unterscheiden und diesen Spuren auf unterschiedlichen Untergründen auch über längere Strecken zu folgen. 
+Unsere Hunde verfügen über einen außergewöhnlichen Geruchssinn, der es ihnen ermöglicht, der individuellen Geruchsspur eines vermissten Menschen auch nach längerer Zeit und über weite Strecken zu folgen. 
 
-Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und sucht anhand einer Geruchsprobe (z. B. ein Kleidungsstück) eine versteckte Person.  Als Mensch lernen Sie Ihrem Hund und dessen Nase zu vertrauen und sich führen zu lassen. Hat der Hund ein Problem (z. B. die Spur verloren), lernen Sie dies anhand seiner Körpersprache zu erkennen und ihm kleine Hilfestellungen zu geben. 
+Beim Mantrailing arbeiten Mensch und Hund im Team. Der Hund lernt sich anhand einer Geruchsprobe (z. B. ein Kleidungsstück) auf einen bestimmten Geruch zu konzentrieren und die versteckte Person zu suchen. Der Mensch lernt dabei, auf die Nase seines Hundes zu vertrauen, seinen Hund zu lesen und dessen Körperhaltung zu deuten. Ein Handeln des Menschen ist immer dann gefragt, wenn der Hund die Geruchsspur verliert oder Probleme hat. Der Mensch lernt ihn in diesen Situationen nicht zu korrigieren, sondern ihm eine Hilfestellung anzubieten, die es dem Hund ermöglicht, eigenständig die Spur wiederzufinden. 
 
-Die Personensuche bietet somit eine artgerechte Auslastungsmöglichkeit und anspruchsvolle Kopfarbeit für Hunde. Vierbeiner, die sich schwer konzentrieren können oder Unsicherheiten gegenüber Menschen zeigen, können von dieser Beschäftigung sehr profitieren.
+Mantrailing ist also Teamarbeit der besonderen Art, jeder gibt dabei das Beste, was er zu bieten hat.
+
+Mantrailing bietet eine artgerechte Form der Beschäftigung und Auslastung und ist dabei für fast jeden Hund geeignet. In hohem Maße eignet es sich auch für Hunde mit Unsicherheiten gegenüber Menschen oder Artgenossen, sowie Umweltängsten, da es den Hund im Problemlösen schult und im Laufe des Trainings vermehrt eigenständiges Handeln erfordert. Es ist daher ausgesprochen geeignet, das Selbstvertrauen des Hundes nachhaltig auszubauen.
+
+Einsteigerkurse ab April 2018 - Bei Interesse sprechen Sie uns gerne an!
