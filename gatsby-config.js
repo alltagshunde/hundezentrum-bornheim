@@ -1,39 +1,10 @@
 module.exports = {
     siteMetadata: {
-        title: `Pandas Eating Lots`,
-        routes: [
-            {
-                path: '/',
-                label: 'Home'
-            },
-            {
-                path: '#news',
-                label: 'Aktuelles'
-            },
-            {
-                path: '#about',
-                label: 'Über uns'
-            },
-            {
-                path: '/kurse/',
-                label: 'Angebot'
-            },
-            {
-                path: '/team/',
-                label: 'Team'
-            },
-            {
-                path: '/kontakt/',
-                label: 'Kontakt'
-            },
-            {
-                path: '#partner',
-                label: 'Partner'
-            },
-        ]
+        siteUrl: `https://www.hundezentrum-bornheim.de`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sitemap`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
