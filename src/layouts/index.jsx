@@ -2,6 +2,7 @@ import React from "react"
 import glamorous, { ThemeProvider, Div, H1 } from 'glamorous'
 import { Container, Row, Col } from 'glamorous-grid'
 import Link from "gatsby-link"
+import { Helmet } from "react-helmet";
 
 import { rhythm } from "../theme/typography"
 import theme from "../theme"
@@ -45,6 +46,10 @@ const FooterLink = glamorous(Link)({
 
 export default ({children, data, noBanner}) => <ThemeProvider theme={ theme }>
                                                    <div css={ { minHeight: '100%' } }>
+                                                       <Helmet titleTemplate="%s | Hundezentrum Bornheim" defaultTitle="Hundezentrum Bornheim">
+                                                           <meta name="description" content="Hundezentrum Bornheim - Training, Beratung und Seminare" />
+                                                           <link rel="canonical" href="https://www.hundezentrum-bornheim.de" />
+                                                       </Helmet>
                                                        { theme.logoTop && <Logo/> }
                                                        <Navbar routes={ data.allMarkdownRemark.edges.map(edge => ({
                                                                             path: edge.node.fields.path,

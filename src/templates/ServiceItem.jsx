@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet";
 
 import Img from 'gatsby-image'
 import { Container, Row, Col } from 'glamorous-grid'
@@ -6,6 +7,13 @@ import { Container, Row, Col } from 'glamorous-grid'
 import Section from '../components/Section'
 
 export default ({data}) => <div>
+                               <Helmet>
+                                   <title>
+                                       { data.markdownRemark.frontmatter.title }
+                                   </title>
+                                   <meta name="description" content={ data.markdownRemark.frontmatter.title } />
+                                   <link rel="canonical" href={ `https://www.hundezentrum-bornheim.de${data.markdownRemark.fields.path}` } />
+                               </Helmet>
                                { data.markdownRemark.frontmatter.image && // TODO: use sizes with media-query, factor out to parallax component 
                                  <div css={ { height: '500px', backgroundImage: `url("${data.markdownRemark.frontmatter.image.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                                <Section title={ data.markdownRemark.frontmatter.title } name={ data.markdownRemark.fields.path } cssover={ { marginBottom: '1rem' } }>

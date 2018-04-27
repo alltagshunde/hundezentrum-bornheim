@@ -2,6 +2,7 @@ import React from "react"
 import glamorous from 'glamorous'
 var MarkdownIt = require('markdown-it'),
     md = new MarkdownIt();
+import { Helmet } from "react-helmet";
 
 import Img from 'gatsby-image'
 import Link from "gatsby-link"
@@ -27,6 +28,14 @@ const Href = glamorous.a({
 export default ({data}) => {
     const section = data.markdownRemark.frontmatter.sections[0]
     return <div>
+               <Helmet>
+                   <title>
+                       { data.markdownRemark.frontmatter.title }
+                   </title>
+                   <meta name="description" content="Mit unserem Gassidienst bieten wir Ihnen Unterstützung, wenn Sie aus privaten, gesundheitlichen oder auch beruflichen Gründen zeitlich verhindert sind, Ihrem Hund die angemessene Bewegung zu ermöglichen."
+                   />
+                   <link rel="canonical" href={ `https://www.hundezentrum-bornheim.de${data.markdownRemark.fields.path}` } />
+               </Helmet>
                { section.image_before && // TODO: use sizes with media-query, factor out to parallax component 
                  <div css={ { height: '500px', backgroundImage: `url("${section.image_before.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                <Section title={ section.title } name={ section.name }>
@@ -68,6 +77,9 @@ export const query = graphql`
   query DogwalkingQuery($path: String!) {
     markdownRemark(fields: { path: { eq: $path } }) {
       html
+      fields {
+        path
+      }
       frontmatter {
         title
         sections {
