@@ -22,7 +22,7 @@ export default ({data}) => {
                        { data.markdownRemark.frontmatter.title }
                    </title>
                    <meta name="description" content={ data.markdownRemark.frontmatter.title } />
-                   <link rel="canonical" href={ `https://www.hundezentrum-bornheim.de${data.markdownRemark.fields.path}` } />
+                   { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
                </Helmet>
                { section.image_before && // TODO: use sizes with media-query, factor out to parallax component 
                  <div css={ { height: '500px', backgroundImage: `url("${section.image_before.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
@@ -50,6 +50,11 @@ export default ({data}) => {
 
 export const query = graphql`
   query TrainerQuery($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { path: { eq: $path } }) {
       html
       fields {

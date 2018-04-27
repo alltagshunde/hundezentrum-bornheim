@@ -12,7 +12,7 @@ export default ({data}) => <div>
                                        { data.markdownRemark.frontmatter.title }
                                    </title>
                                    <meta name="description" content={ data.markdownRemark.frontmatter.title } />
-                                   <link rel="canonical" href={ `https://www.hundezentrum-bornheim.de${data.markdownRemark.fields.path}` } />
+                                   { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
                                </Helmet>
                                { data.markdownRemark.frontmatter.image && // TODO: use sizes with media-query, factor out to parallax component 
                                  <div css={ { height: '500px', backgroundImage: `url("${data.markdownRemark.frontmatter.image.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
@@ -38,6 +38,11 @@ export default ({data}) => <div>
 
 export const query = graphql`
   query ServiceItemQuery($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { path: { eq: $path } }) {
       fields {
         path

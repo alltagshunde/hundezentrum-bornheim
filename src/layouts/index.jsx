@@ -46,9 +46,9 @@ const FooterLink = glamorous(Link)({
 
 export default ({children, data, noBanner}) => <ThemeProvider theme={ theme }>
                                                    <div css={ { minHeight: '100%' } }>
-                                                       <Helmet titleTemplate="%s | Hundezentrum Bornheim" defaultTitle="Hundezentrum Bornheim">
-                                                           <meta name="description" content="Hundezentrum Bornheim - Training, Beratung und Seminare" />
-                                                           <link rel="canonical" href="https://www.hundezentrum-bornheim.de" />
+                                                       <Helmet htmlAttributes={ { lang: 'de' } } titleTemplate="%s | Hundezentrum Bornheim" defaultTitle="Training, Beratung und Seminare für Mensch und Hund | Hundezentrum Bornheim">
+                                                           <meta name="description" content="Hundezentrum Bornheim - Training, Beratung und Seminare für Mensch und Hund" />
+                                                           { data.site && <link rel="canonical" href={ data.site.siteMetadata.siteUrl } /> }
                                                        </Helmet>
                                                        { theme.logoTop && <Logo/> }
                                                        <Navbar routes={ data.allMarkdownRemark.edges.map(edge => ({
@@ -68,10 +68,7 @@ export const query = graphql`
   query RouteQuery {
     site {
       siteMetadata {
-        routes {
-            path
-            label
-        }
+        siteUrl
       }
     }
     allMarkdownRemark(filter: {fields: {navEntry: {eq: "menu"}}}, sort: { fields: [frontmatter___position], order: ASC }) {

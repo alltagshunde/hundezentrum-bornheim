@@ -15,7 +15,7 @@ const Navbar = glamorous.nav({
     display: 'flex',
     flexWrap: 'wrap', // allow us to do the line break for collapsing content
     alignItems: 'center',
-    justifyContent: 'spaceBetween', // space out brand from logo
+    justifyContent: 'space-between', // space out brand from logo
     padding: '1rem 1rem',
     //opacity: 0.9,
     '@supports (position: sticky)': {
@@ -62,7 +62,10 @@ export default ({routes}) => {
                <NavContent>
                    <Nav>
                        { routes.map(route => <li key={ route.path } css={ { margin: 0 } }>
-                                                 <NavLink to={ route.path } exact={ route.path === '/' } activeClassName="active">
+                                                 <NavLink to={ route.path }
+                                                     exact={ route.path === '/' }
+                                                     activeClassName="active"
+                                                     title={ route.label }>
                                                      { route.label }
                                                  </NavLink>
                                              </li>) }

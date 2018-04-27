@@ -14,7 +14,7 @@ export default ({data}) => <div>
                                        { data.markdownRemark.frontmatter.title }
                                    </title>
                                    <meta name="description" content={ data.markdownRemark.frontmatter.title } />
-                                   <link rel="canonical" href={ `https://www.hundezentrum-bornheim.de${data.markdownRemark.fields.path}` } />
+                                   { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
                                </Helmet>
                                { data.markdownRemark.frontmatter.sections.map(section => {
                                      return <div key={ section.title }>
@@ -30,6 +30,11 @@ export default ({data}) => <div>
 
 export const query = graphql`
   query PageQuery($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { path: { eq: $path } }) {
       html
       fields {

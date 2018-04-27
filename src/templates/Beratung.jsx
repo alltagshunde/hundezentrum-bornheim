@@ -34,7 +34,7 @@ export default ({data}) => {
                    </title>
                    <meta name="description" content="Zeigt Ihr Hund im Alltag unerwünschtes oder problematisches Verhalten lassen sich diese Probleme aufgrund der Einzigartigkeit jeder Beziehung am effektivsten in der Einzelberatung lösen."
                    />
-                   <link rel="canonical" href={ `https://www.hundezentrum-bornheim.de${data.markdownRemark.fields.path}` } />
+                   { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
                </Helmet>
                { section.image_before && // TODO: use sizes with media-query, factor out to parallax component 
                  <div css={ { height: '500px', backgroundImage: `url("${section.image_before.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
@@ -70,6 +70,11 @@ export default ({data}) => {
 
 export const query = graphql`
   query BeratungQuery($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { path: { eq: $path } }) {
       html
       excerpt
