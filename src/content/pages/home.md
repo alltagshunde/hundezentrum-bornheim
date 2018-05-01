@@ -4,7 +4,7 @@ name: home
 position: 10
 path: /
 description: >-
-  Wir sind ausgebildete Hundetrainer und Verhaltensberater in und um Bornheim, Wesseling und Brühl. In unserem Hundezentrum bieten wir Ihnen kompetentes und praxisnahes Hundetraining sowie ein vielfältiges Kursangebot zur Erziehung und Beschäftigung Ihres Hundes. Darüber hinaus bieten wir Ihnen weitere Dienstleistungen wie einen Gassiservice, Hundebetreuung, sowie Seminare und Workshops an.
+  In unserem Hundezentrum bieten wir Ihnen kompetentes und praxisnahes Hundetraining sowie ein vielfältiges Kursangebot zur Erziehung und Beschäftigung Ihres Hundes in und um Bornheim, Wesseling und Brühl.
 sections:
   - title: Willkommen
     name: about
