@@ -1,7 +1,11 @@
 ---
 title: Seminare
 name: seminare
-position: '80'
+position: 80
+description: >-
+  In regelmäßigen Abständen bieten wir Themenabende, Workshops und Seminare
+  u.a. zu folgenden Themen an: Die Pubertät des Hundes, Körpersprache Mensch-Hund, 
+  Ernährung und Krankheiten
 sections:
   - name: seminare
     title: Seminare & Workshops

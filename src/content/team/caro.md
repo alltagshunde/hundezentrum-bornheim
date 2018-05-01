@@ -1,6 +1,6 @@
 ---
 title: Carolin Henseler
-position: '20'
+position: 20
 description:
 phone: 0176 / 61711772
 site: http://www.alltagshunde-bonn.de
@@ -10,6 +10,8 @@ area: 'Raum Bonn, Meckenheim & Wachtberg'
 image: /static/img/DSC01648.jpg
 ---
 **Ausbildung & Qualifikation**
+
+Erlaubnis §11 TierSchG
 
 Absolventin des CANIS-Studiums zur Hundetrainerin & Verhaltensberaterin bei CANIS-Zentrum für Kynologie
 

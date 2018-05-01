@@ -1,5 +1,5 @@
 ---
-title: Welpen
+title: Welpengruppe
 termin: 'Samstags 10:00 Uhr'
 price: 'Schnupperstunde 10 Euro, 5er-Karte 60 Euro'
 position: 10

@@ -2,7 +2,7 @@
 title: Beschäftigungsgruppe
 termin: Frühjahr 2018
 price: 5er-Karte 75 Euro
-position: '100'
+position: 100
 description: Ein bunter Mix aus verschiedenen Beschäftigungsarten.
 image: /static/img/Beschaeftigung_Apport.png
 ---

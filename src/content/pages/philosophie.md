@@ -1,15 +1,20 @@
 ---
-title: Home
-name: news
-position: 10
-path: /
+title: Philosophie
+name: philosophie
+position: 100
+menu: false
+description: >-
+  Hunde die gelernt haben die ihnen aufgezeigten
+  Grenzen zu akzeptieren und sich in Konfliktsituationen auf ihren Menschen
+  zu verlassen, genießen in unserer Gesellschaft mehr Freiheiten und
+  sind in der Regel (fast) überall gern gesehene Gäste.
 sections:
-  - title: Über uns
-    name: about
+  - title: Philosophie
+    name: philosophie
     text: >-
       Die Hundehaltung sieht heute anders aus als noch vor 30 Jahren. Der
       gesellschaftliche Druck auf Hunde und ihre Halter nimmt stetig zu und der
-      Hund muss „funktionieren“. Hunde die gelernt haben, die ihnen aufgezeigten
+      Hund muss „funktionieren“. Hunde die gelernt haben die ihnen aufgezeigten
       Grenzen zu akzeptieren und sich in Konfliktsituationen auf ihren Menschen
       zu verlassen, genießen in unserer Gesellschaft daher mehr Freiheiten und
       sind in der Regel (fast) überall gern gesehene Gäste.
@@ -24,8 +29,6 @@ sections:
 
       Auf dem Weg dorthin möchten wir Sie und Ihren Hund gerne begleiten und
       unterstützen. Im Vordergrund steht für uns dabei statt vielfältiger
-      Hilfsmittel, die soziale Beziehung zwischen Ihnen und Ihrem Hund.
-  - title: Aktuelles
-    name: news
+      Hilfsmittel die soziale Beziehung zwischen Ihnen und Ihrem Hund.
 ---
 

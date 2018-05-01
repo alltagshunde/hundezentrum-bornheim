@@ -1,13 +1,15 @@
 ---
 title: Dogwalking
 name: dogwalking
-position: '60'
+position: 60
+description: >-
+  Mit unserem Gassiservice bieten wir Ihnen Unterstützung, wenn Sie aus privaten, gesundheitlichen oder auch beruflichen Gründen zeitlich verhindert sind, Ihrem Hund die angemessene Bewegung zu ermöglichen.
 sections:
-  - title: Dogwalking
+  - title: Dogwalking/Gassiservice
     name: dogwalking
     image_before: /static/img/image-2018-01-22.png
     text: >-
-      Mit unserem Gassidienst bieten wir Ihnen Unterstützung, wenn Sie aus
+      Mit unserem Gassiservice bieten wir Ihnen Unterstützung, wenn Sie aus
       privaten, gesundheitlichen oder auch beruflichen Gründen zeitlich
       verhindert sind, Ihrem Hund die angemessene Bewegung zu ermöglichen.
 
@@ -29,7 +31,7 @@ sections:
 
 
 
-      **UNSER GASSIDIENST BIETET**
+      **UNSER GASSISERVICE BIETET**
 
 
       * Kompetente Betreuung durch ausgebildete Hundetrainer

@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet";
 
 import Img from 'gatsby-image'
 import { Container, Row, Col } from 'glamorous-grid'
@@ -6,6 +7,13 @@ import { Container, Row, Col } from 'glamorous-grid'
 import Section from '../components/Section'
 
 export default ({data}) => <div>
+                               <Helmet>
+                                   <title>
+                                       { data.markdownRemark.frontmatter.title }
+                                   </title>
+                                   <meta name="description" content={ data.markdownRemark.frontmatter.description } />
+                                   { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
+                               </Helmet>
                                { data.markdownRemark.frontmatter.image && // TODO: use sizes with media-query, factor out to parallax component 
                                  <div css={ { height: '500px', backgroundImage: `url("${data.markdownRemark.frontmatter.image.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                                <Section title={ data.markdownRemark.frontmatter.title } name={ data.markdownRemark.fields.path } cssover={ { marginBottom: '1rem' } }>
@@ -30,6 +38,11 @@ export default ({data}) => <div>
 
 export const query = graphql`
   query ServiceItemQuery($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { path: { eq: $path } }) {
       fields {
         path
@@ -39,6 +52,7 @@ export const query = graphql`
         title
         termin
         price
+        description
         image {
           childImageSharp {
             sizes {

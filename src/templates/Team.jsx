@@ -1,5 +1,6 @@
 import React from "react"
 import glamorous from 'glamorous'
+import { Helmet } from "react-helmet";
 
 import Img from 'gatsby-image'
 import Link from "gatsby-link"
@@ -16,6 +17,13 @@ const CardPrimary = glamorous(Card)({
 export default ({data}) => {
     const section = data.markdownRemark.frontmatter.sections[0]
     return <div>
+               <Helmet>
+                   <title>
+                       { section ? section.title : data.markdownRemark.frontmatter.title }
+                   </title>
+                   <meta name="description" content={ data.markdownRemark.frontmatter.description } />
+                   { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
+               </Helmet>
                { section.image_before && // TODO: use sizes with media-query, factor out to parallax component 
                  <div css={ { height: '500px', backgroundImage: `url("${section.image_before.childImageSharp.sizes.src}")`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' } }></div> }
                <Section title={ section.title } name={ section.name }>
@@ -27,7 +35,7 @@ export default ({data}) => {
                                                                               { node.frontmatter.title }
                                                                           </CardHeader>
                                                                           <CardBody>
-                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginBottom: '1rem' } } />
+                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } alt={ node.frontmatter.title } css={ { marginBottom: '1rem' } } />
                                                                               <div dangerouslySetInnerHTML={ { __html: node.html } } />
                                                                           </CardBody>
                                                                       </CardPrimary>
@@ -42,10 +50,19 @@ export default ({data}) => {
 
 export const query = graphql`
   query TrainerQuery($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { path: { eq: $path } }) {
       html
+      fields {
+        path
+      }
       frontmatter {
         title
+        description
         sections {
           title
           name

@@ -1,9 +1,11 @@
 ---
 title: Beratung
 name: beratung
-position: '50'
+position: 50
+description: >-
+  In einem ausführlichen Erstgespräch geht es zunächst darum, Sie und Ihren Hund kennenzulernen. Gemeinsam ermitteln wir die Ursachen des Problems und legen die ersten Schritte zur Verhaltensänderung Ihres Hundes fest.
 sections:
-  - title: Einzelberatung
+  - title: Beratung und Training
     name: beratung
     text: >-
       Zeigt Ihr Hund im Alltag unerwünschtes oder problematisches Verhalten

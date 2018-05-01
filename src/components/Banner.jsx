@@ -51,10 +51,10 @@ const ban = css({
 export default ({sizes}) => <Container fluid px="0 !important">
                                 <Row noGutters={ true } css={ { backgroundColor: '#fafafa' } }>
                                     <Col span={ { md: 6 / 12 } } alignSelf="end">
-                                    <Img sizes={ sizes } css={ { marginTop: 'auto' } } />
+                                    <Img sizes={ sizes } alt="dog" css={ { marginTop: 'auto' } } />
                                     </Col>
                                     <StyledCol span={ { md: 6 / 12 } }>
-                                        <img src={ theme.inverted ? logo : logo_inverted } css={ { width: '80%', margin: 0 } } />
+                                        <img alt="logo" src={ theme.inverted ? logo : logo_inverted } css={ { width: '80%', margin: 0 } } />
                                         <H>
                                             Kompetenz rund um Ihren Hund
                                         </H>
