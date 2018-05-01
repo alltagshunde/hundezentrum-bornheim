@@ -1,6 +1,6 @@
 ---
 title: Gruppen
-name: services
+name: gruppen
 position: 40
 description: >-
   Vielfältiges Gruppen- und Kursangebot: Welpengruppe, Junghundekurse, Raufergruppe, Spielgruppe, Agility, Mantrailing, Hundewanderungen und vieles mehr.

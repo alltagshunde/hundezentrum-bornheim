@@ -35,7 +35,7 @@ export default ({data}) => {
                                                                               { node.frontmatter.title }
                                                                           </CardHeader>
                                                                           <CardBody>
-                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginBottom: '1rem' } } />
+                                                                              <Img sizes={ node.frontmatter.image.childImageSharp.sizes } alt={ node.frontmatter.title } css={ { marginBottom: '1rem' } } />
                                                                               <div dangerouslySetInnerHTML={ { __html: node.html } } />
                                                                           </CardBody>
                                                                       </CardPrimary>

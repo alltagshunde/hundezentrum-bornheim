@@ -15,7 +15,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 getNode,
                 basePath: basePath
             })
-            slug = slug.replace('/courses/', '/gruppentraining/')
+            slug = slug.replace('/courses/', '/gruppen/')
 
             createNodeField({
                 node,
@@ -122,7 +122,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                     const slug = node.fields.path //.replace('courses', 'services')
                     createPage({
                         path: node.fields.path,
-                        component: path.resolve(`./src/templates/ServiceItem.jsx`),
+                        component: path.resolve(`./src/templates/Gruppe.jsx`),
                         context: {
                             // Data passed to context is available in page queries as GraphQL variables.
                             //path: node.fields.path,

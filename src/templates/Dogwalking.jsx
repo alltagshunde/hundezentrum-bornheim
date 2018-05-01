@@ -60,7 +60,7 @@ export default ({data}) => {
                                                               { node.frontmatter.sitename }
                                                           </Href>
                                                       </div>
-                                                      { node.frontmatter.image && <Img sizes={ node.frontmatter.image.childImageSharp.sizes } css={ { marginTop: '1rem' } } /> }
+                                                      { node.frontmatter.image && <Img sizes={ node.frontmatter.image.childImageSharp.sizes } alt={ node.frontmatter.title } css={ { marginTop: '1rem' } } /> }
                                                   </CardBody>
                                               </CardPrimary>
                                               </Col>
