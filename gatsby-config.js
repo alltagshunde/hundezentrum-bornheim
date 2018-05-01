@@ -1,10 +1,33 @@
+
+const {NODE_ENV, URL: NETLIFY_SITE_URL = 'https://www.hundezentrum-bornheim.de', DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL, CONTEXT: NETLIFY_ENV = NODE_ENV} = process.env;
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.hundezentrum-bornheim.de`,
+        siteUrl
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sitemap`,
+        `gatsby-plugin-netlify`,
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: isNetlifyProduction
+                ? {
+                    policy: [{
+                        userAgent: '*'
+                    }]
+                }
+                : {
+                    policy: [{
+                        userAgent: '*',
+                        disallow: ['/']
+                    }],
+                    sitemap: null,
+                    host: null
+                }
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -48,6 +71,7 @@ module.exports = {
         },
         `gatsby-plugin-glamor`,
         `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-catch-links`
     ],
 }

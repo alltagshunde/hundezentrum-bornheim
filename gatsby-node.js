@@ -27,9 +27,9 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 name: `slug`,
                 value: slug === '/home/' ? '/' : slug,
             })
-            console.log('FILE', itemType, slug);
+        //console.log('FILE', itemType, slug);
         } else if (node.relativePath.indexOf('assets') === 0) {
-            console.log('ASS', node.relativePath);
+            //console.log('ASS', node.relativePath);
         }
     } else if (node.internal.type === `MarkdownRemark`) {
         const fileNode = getNode(node.parent)
@@ -38,19 +38,19 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
 
             Object.keys(node.frontmatter).forEach(key => {
                 if (key.indexOf('image') === 0) {
-                    console.log('MD', node.frontmatter[key]);
+                    //console.log('MD', node.frontmatter[key]);
                     if (node.frontmatter[key].indexOf('/static/img') === 0) {
                         node.frontmatter[key] = node.frontmatter[key].replace('/static/img', '../../../src/assets/img');
-                        console.log('MD', node.frontmatter[key]);
+                    //console.log('MD', node.frontmatter[key]);
                     }
                 } else if (key === 'sections') {
                     node.frontmatter.sections.forEach(section => {
                         Object.keys(section).forEach(skey => {
                             if (skey.indexOf('image') === 0) {
-                                console.log('MD', section[skey]);
+                                //console.log('MD', section[skey]);
                                 if (section[skey].indexOf('/static/img') === 0) {
                                     section[skey] = section[skey].replace('/static/img', '../../../src/assets/img');
-                                    console.log('MD', section[skey]);
+                                //console.log('MD', section[skey]);
                                 }
                             }
                         });
@@ -66,14 +66,14 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
             createNodeField({
                 node,
                 name: `navEntry`,
-                value: fileNode.fields.itemType === 'pages' && slug !== '/legal/' && slug !== '/privacy/' ? 'menu' : 'footer',
+                value: fileNode.fields.itemType === 'pages' && node.frontmatter.menu !== false ? 'menu' : 'footer',
             })
             createNodeField({
                 node,
                 name: `path`,
                 value: slug,
             })
-            console.log('MD', fileNode.fields.itemType, slug, node.frontmatter)
+        //console.log('MD', fileNode.fields.itemType, slug, node.frontmatter)
         }
     }
 }
@@ -112,12 +112,12 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                         component: component,
                         context: {
                             // Data passed to context is available in page queries as GraphQL variables.
-                            path: node.fields.path,
+                            //path: node.fields.path,
                         },
                         layout: node.fields.path === '/' ? 'index' : 'NoBanner'
                     })
 
-                    console.log('PAGE', node, component)
+                //console.log('PAGE', node, component)
                 } else if (node.fields.itemType === 'courses') {
                     const slug = node.fields.path //.replace('courses', 'services')
                     createPage({
@@ -125,12 +125,12 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                         component: path.resolve(`./src/templates/ServiceItem.jsx`),
                         context: {
                             // Data passed to context is available in page queries as GraphQL variables.
-                            path: node.fields.path,
+                            //path: node.fields.path,
                         },
                         layout: 'NoBanner'
                     })
 
-                    console.log('COURSE', node, slug)
+                //console.log('COURSE', node, slug)
                 }
             })
             resolve()

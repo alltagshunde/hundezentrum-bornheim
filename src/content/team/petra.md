@@ -1,6 +1,6 @@
 ---
 title: Petra Schauer
-position: '30'
+position: 30
 description:
 phone: 0163 / 4817487
 site: http://www.360-hundeschule.de
@@ -10,6 +10,8 @@ area: 'Raum Bornheim & Wesseling'
 image: /static/img/DSC01254.jpg
 ---
 **Ausbildung & Qualifikation**
+
+Erlaubnis §11 TierSchG
 
 zertifizierte Hundetrainerin & Verhaltensberaterin über die Tierärztekammer Schleswig-Holstein 
 

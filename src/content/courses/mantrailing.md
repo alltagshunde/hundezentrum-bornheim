@@ -2,7 +2,7 @@
 title: Mantrailing
 termin: ab April 2018
 price: 'Einsteigerkurs 110 Euro (1x Theorie, 4 x Praxis a ca. 2 Stunden)'
-position: '70'
+position: 70
 description: >-
   Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund
   im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und

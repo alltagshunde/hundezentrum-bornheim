@@ -1,7 +1,8 @@
 ---
 title: Impressum
 name: legal
-position: '20'
+position: 20
+menu: false
 sections:
   - title: Impressum
     name: legal

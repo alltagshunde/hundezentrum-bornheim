@@ -21,9 +21,9 @@ export default ({data}) => {
     return <div>
                <Helmet>
                    <title>
-                       { data.markdownRemark.frontmatter.title }
+                       { section ? section.title : data.markdownRemark.frontmatter.title }
                    </title>
-                   <meta name="description" content={ data.markdownRemark.frontmatter.title } />
+                   <meta name="description" content={ data.markdownRemark.frontmatter.description } />
                    { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
                </Helmet>
                { section.image_before && // TODO: use sizes with media-query, factor out to parallax component 
@@ -68,6 +68,7 @@ export const query = graphql`
       }
       frontmatter {
         title
+        description
         sections {
           title
           name

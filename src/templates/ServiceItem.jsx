@@ -11,7 +11,7 @@ export default ({data}) => <div>
                                    <title>
                                        { data.markdownRemark.frontmatter.title }
                                    </title>
-                                   <meta name="description" content={ data.markdownRemark.frontmatter.title } />
+                                   <meta name="description" content={ data.markdownRemark.frontmatter.description } />
                                    { data.site && <link rel="canonical" href={ `${data.site.siteMetadata.siteUrl}${data.markdownRemark.fields.path}` } /> }
                                </Helmet>
                                { data.markdownRemark.frontmatter.image && // TODO: use sizes with media-query, factor out to parallax component 
@@ -52,6 +52,7 @@ export const query = graphql`
         title
         termin
         price
+        description
         image {
           childImageSharp {
             sizes {

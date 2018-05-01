@@ -1,6 +1,6 @@
 ---
 title: Andrea Fricke
-position: '10'
+position: 10
 description:
 phone: 0151 / 40155575
 site: http://www.hundeschule-bornheim.de
@@ -10,6 +10,8 @@ area:
 image: /static/img/DSC01535.jpg
 ---
 **Ausbildung & Qualifikation**
+
+Erlaubnis §11 TierSchG
 
 zertifizierte Hundetrainerin & Verhaltensberaterin über die Tierärztekammer Schleswig-Holstein 
 

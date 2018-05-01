@@ -1,7 +1,8 @@
 ---
 title: Datenschutzerklärung
 name: privacy
-position: '30'
+position: 30
+menu: false
 sections:
   - title: Datenschutzerklärung
     name: privacy

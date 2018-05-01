@@ -10,6 +10,16 @@ const Hr = glamorous.div({
     borderColor: theme.color.primary
 }));
 
+const StyledContainer = glamorous(Container)({
+    paddingTop: '3rem',
+    paddingBottom: '3rem'
+}, ({theme}) => ({
+    '& a': {
+        textDecoration: 'none',
+        color: theme.color.primary,
+    }
+}));
+
 export default ({title, name, children, cssover}) => {
     const css2 = {
         paddingTop: '5rem',
@@ -20,7 +30,7 @@ export default ({title, name, children, cssover}) => {
     return (
         <div>
             <a name={ name } id={ name }></a>
-            <Container css={ { paddingTop: '3rem', paddingBottom: '3rem' } }>
+            <StyledContainer>
                 <Row>
                     <Col span={ { md: 8 / 12, lg: 6 / 12, xl: 4 / 12 } } offset={ { md: 2 / 12, lg: 3 / 12, xl: 4 / 12 } } css={ { display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '4rem', ...cssover } }>
                     <h3 css={ { textTransform: 'uppercase' } }>{ title }</h3>
@@ -28,7 +38,7 @@ export default ({title, name, children, cssover}) => {
                     </Col>
                 </Row>
                 { children }
-            </Container>
+            </StyledContainer>
         </div>
     )
 }
