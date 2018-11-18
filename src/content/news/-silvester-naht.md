@@ -27,7 +27,7 @@ Am Ende des Vortrags werdet Ihr auf jeden Fall ein breiteres Verständnis davon 
 
 **Wann?**
 
-Dienstag den 4. Dezember 2018 von 18:30 Uhr bis ca. 21:00 Uhr
+Dienstag den 4. 12. 2018 von 18:30 Uhr bis ca. 21:00 Uhr
 
 **Wo?**
 
