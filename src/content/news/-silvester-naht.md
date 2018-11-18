@@ -3,9 +3,11 @@ title: '"Silvester naht!"'
 date: '2018-11-18T12:14:17+01:00'
 description: Theoretischer Abendvortrag am 4.12.2018
 ---
-In diesem Abendvortrag erzähle ich Euch eine Menge wissenswerter Dinge rund um das Thema "Silvesterangst" beim Hund.  \
+**Dieser Vortrag hilft zu verstehen! **\
 \
-In lockerer Runde erfahrt Ihr etwas über die physiologischen Hintergründe von Angst- und Furchtgefühlen. Außerdem erhaltet Ihr jede Menge Tipps zum Umgang mit Eurem ängstlichen Hund bzw. was Ihr als Besitzer eines Welpen oder jungen Hundes tun könnt um zu verhindern, dass Euer Hund überhaupt erst eine ausgeprägte "Silvesterangst" entwickelt. \
+In lockerer Runde erfahrt Ihr eine Menge wissenswerter Dinge rund um das Thema "Silvesterangst" beim Hund. \
+\
+Zunächst erhaltet Ihr einen kurzen Einblick in die physiologischen Hintergründe von Angst- und Furchtgefühlen. Außerdem gibt es jede Menge Tipps zum Umgang mit Eurem ängstlichen Hund am und vor dem Silvesterabend. Als Besitzer eines Welpen oder jungen Hundes erfahrt Ihr, was Ihr präventiv tun könnt um zu verhindern, dass Euer Hund überhaupt erst eine ausgeprägte "Silvesterangst" entwickelt. \
 \
 Am Ende des Vortrags werdet Ihr auf jeden Fall ein breiteres Verständnis davon haben, was Euer Hund so fühlt, wenn es knallt ;-)
 
