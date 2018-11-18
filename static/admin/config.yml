@@ -9,34 +9,40 @@ public_folder: "/static/img"
 
 collections: 
   - name: "pages"
-    label: "Pages"
+    label: "Seiten"
     folder: "src/content/pages"
-    create: true
+    create: false
+    delete: false
     fields:
-      - {label: Title, name: title, widget: string}
+      - {label: Titel, name: title, widget: string}
       - {label: Name, name: name, widget: string}
-      - {label: Position, name: position, widget: number}
-      - {label: Path, name: path, widget: hidden}
-      - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Name, name: name, widget: string}, {label: Text, name: text, widget: markdown}, {label: Image, name: image_before, widget: image, required: false}]}
+      - {label: "Position für Sortierreihenfolge", name: position, widget: number}
+      - {label: Pfad, name: path, widget: hidden}
+      - {label: Sections, name: sections, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Name, name: name, widget: string}, {label: Text, name: text, widget: markdown}, {label: Image, name: image_before, widget: image, required: false, default: ''}]}
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "News" # Used in the UI, ie.: "New Post"
+    label: "Aktuelles" # Used in the UI, ie.: "New Post"
     folder: "src/content/news" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image, required: false}    
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Datum für Sortierreihenfolge", name: "date", widget: "datetime"}
+      - {label: "Auf Startseite anzeigen bis", name: "frontpageUntil", widget: "datetime"}
+      - {label: Kurzbeschreibung, name: description, widget: string}
+      - {label: Termin, name: termin, widget: string, required: false, default: ''}
+      - {label: Ort, name: place, widget: string, required: false, default: ''}
+      - {label: Preis, name: price, widget: string, required: false, default: ''}
+      - {label: AnmeldeInformationen, name: subscription, widget: string, required: false, default: ''}
+      - {label: Bild, name: image, widget: image, required: false, default: ''}    
       - {label: "Text", name: "body", widget: "markdown"}
   - name: "services" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Courses" # Used in the UI, ie.: "New Post"
+    label: "Kurse" # Used in the UI, ie.: "New Post"
     folder: "src/content/courses" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
-      - {label: Date, name: termin, widget: string}
-      - {label: Price, name: price, widget: string}
-      - {label: Position, name: position, widget: number}
-      - {label: Description, name: description, widget: string}
-      - {label: Image, name: image, widget: image, required: false}      
+      - {label: Titel, name: title, widget: string}
+      - {label: Datum, name: termin, widget: string}
+      - {label: Kurzbeschreibung, name: description, widget: string}
+      - {label: Preis, name: price, widget: string}
+      - {label: "Position für Sortierreihenfolge", name: position, widget: number}
+      - {label: Bild, name: image, widget: image, required: false, default: ''}      
       - {label: "Text", name: "body", widget: "markdown"}
