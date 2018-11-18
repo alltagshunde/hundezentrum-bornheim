@@ -11,7 +11,7 @@ export default (props) => {
 
 export const query = graphql`
   query NoBannerQuery {
-    allMarkdownRemark(filter: {fields: {navEntry: {eq: "menu"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
+    menu: allMarkdownRemark(filter: {fields: {navEntry: {eq: "menu"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
         edges {
           node {
             fields {

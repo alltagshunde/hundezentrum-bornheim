@@ -33,7 +33,7 @@ module.exports = {
             options: {
                 trackingId: "UA-82648847-2",
                 // Puts tracking script in the head instead of the body
-                head: true,
+                head: false,
                 // Setting this parameter is optional
                 anonymize: true,
                 // Setting this parameter is also optional

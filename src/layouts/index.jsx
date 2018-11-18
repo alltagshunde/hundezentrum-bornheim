@@ -10,22 +10,22 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
 
-export default ({children, data, noBanner}) => <ThemeProvider theme={ theme }>
-                                                   <Div css={ { minHeight: '100%' } }>
-                                                       <Helmet htmlAttributes={ { lang: 'de' } } titleTemplate="%s | Hundezentrum Bornheim" defaultTitle="Kompetenz rund um Ihren Hund | Hundezentrum Bornheim">
-                                                           <meta name="description" content="Hundezentrum Bornheim - Kompetenz rund um Ihren Hund" />
-                                                           { data.site && <link rel="canonical" href={ data.site.siteMetadata.siteUrl } /> }
-                                                       </Helmet>
-                                                       { theme.logoTop && <Logo/> }
-                                                       <Navbar routes={ data.allMarkdownRemark.edges.map(edge => ({
-                                                                            path: edge.node.fields.path,
-                                                                            label: edge.node.frontmatter.title
-                                                                        })) } />
-                                                       { !noBanner && <Banner sizes={ data.file.childImageSharp.sizes } /> }
-                                                       { children() }
-                                                       <Footer/>
-                                                   </Div>
-                                               </ThemeProvider>
+export default ({ children, data, noBanner }) => <ThemeProvider theme={theme}>
+  <Div css={{ minHeight: '100%' }}>
+    <Helmet htmlAttributes={{ lang: 'de' }} titleTemplate="%s | Hundezentrum Bornheim" defaultTitle="Kompetenz rund um Ihren Hund | Hundezentrum Bornheim">
+      <meta name="description" content="Hundezentrum Bornheim - Kompetenz rund um Ihren Hund" />
+      {data.site && <link rel="canonical" href={data.site.siteMetadata.siteUrl} />}
+    </Helmet>
+    {theme.logoTop && <Logo />}
+    <Navbar routes={data.menu.edges.map(edge => ({
+      path: edge.node.fields.path,
+      label: edge.node.frontmatter.title
+    }))} news={noBanner ? [] : ((data.news.edges && data.news.edges.length > 0) ? [{ ...data.news.edges[0].node.frontmatter, ...data.news.edges[0].node.fields }] : [])} />
+    {!noBanner && <Banner sizes={data.file.childImageSharp.sizes} />}
+    {children()}
+    <Footer />
+  </Div>
+</ThemeProvider>
 
 export const query = graphql`
   query RouteQuery {
@@ -34,7 +34,7 @@ export const query = graphql`
         siteUrl
       }
     }
-    allMarkdownRemark(filter: {fields: {navEntry: {eq: "menu"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
+    menu: allMarkdownRemark(filter: {fields: {navEntry: {eq: "menu"}}}, sort: { fields: [frontmatter___position], order: ASC }) {
         edges {
           node {
             fields {
@@ -47,6 +47,23 @@ export const query = graphql`
           }
         }
     }
+
+    news: allMarkdownRemark(filter: {fields: {itemType: {eq: "news"}}}, sort: { fields: [frontmatter___frontpageUntil], order: DESC }) {
+      edges {
+        node {
+          id
+          fields {
+            path
+          }
+          frontmatter {
+            title
+            description
+            frontpageUntil
+          }
+        }
+      }
+    }
+
     file(relativePath: { eq: "assets/img/pexels-photo-406014.jpg"}) {
       childImageSharp {
       sizes(maxWidth: 1600) {

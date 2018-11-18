@@ -1,10 +1,10 @@
 const path = require(`path`)
 const fs = require('fs-extra');
-const {createFilePath} = require(`gatsby-source-filesystem`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 const _ = require('lodash');
 
-exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
-    const {createNodeField} = boundActionCreators
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+    const { createNodeField } = boundActionCreators
 
     if (node.internal.type === `File`) {
         if (node.relativePath.indexOf('content') === 0) {
@@ -16,6 +16,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 basePath: basePath
             })
             slug = slug.replace('/courses/', '/gruppen/')
+            slug = slug.replace('/news/', '/aktuelles/')
 
             createNodeField({
                 node,
@@ -27,7 +28,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 name: `slug`,
                 value: slug === '/home/' ? '/' : slug,
             })
-        //console.log('FILE', itemType, slug);
+            //console.log('FILE', itemType, slug);
         } else if (node.relativePath.indexOf('assets') === 0) {
             //console.log('ASS', node.relativePath);
         }
@@ -41,7 +42,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                     //console.log('MD', node.frontmatter[key]);
                     if (node.frontmatter[key].indexOf('/static/img') === 0) {
                         node.frontmatter[key] = node.frontmatter[key].replace('/static/img', '../../../src/assets/img');
-                    //console.log('MD', node.frontmatter[key]);
+                        //console.log('MD', node.frontmatter[key]);
                     }
                 } else if (key === 'sections') {
                     node.frontmatter.sections.forEach(section => {
@@ -50,7 +51,7 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                                 //console.log('MD', section[skey]);
                                 if (section[skey].indexOf('/static/img') === 0) {
                                     section[skey] = section[skey].replace('/static/img', '../../../src/assets/img');
-                                //console.log('MD', section[skey]);
+                                    //console.log('MD', section[skey]);
                                 }
                             }
                         });
@@ -73,13 +74,13 @@ exports.onCreateNode = ({node, getNode, boundActionCreators}) => {
                 name: `path`,
                 value: slug,
             })
-        //console.log('MD', fileNode.fields.itemType, slug, node.frontmatter)
+            //console.log('MD', fileNode.fields.itemType, slug, node.frontmatter)
         }
     }
 }
 
-exports.createPages = ({graphql, boundActionCreators}) => {
-    const {createPage} = boundActionCreators
+exports.createPages = ({ graphql, boundActionCreators }) => {
+    const { createPage } = boundActionCreators
     return new Promise((resolve, reject) => {
         graphql(`
       {
@@ -99,42 +100,55 @@ exports.createPages = ({graphql, boundActionCreators}) => {
         }
       }
     `).then(result => {
-            result.data.allMarkdownRemark.edges.map(({node}) => {
-                if (node.fields.itemType === 'pages') {
-                    // loads e.g. Services.jsx or News.jsx
-                    let component = path.resolve(`./src/templates/${_.startCase(node.frontmatter.name)}.jsx`)
-                    if (!fs.existsSync(component)) {
-                        component = path.resolve(`./src/templates/Page.jsx`)
+                result.data.allMarkdownRemark.edges.map(({ node }) => {
+                    if (node.fields.itemType === 'pages') {
+                        // loads e.g. Services.jsx or News.jsx
+                        let component = path.resolve(`./src/templates/${_.startCase(node.frontmatter.name)}.jsx`)
+                        if (!fs.existsSync(component)) {
+                            component = path.resolve(`./src/templates/Page.jsx`)
+                        }
+
+                        createPage({
+                            path: node.fields.path,
+                            component: component,
+                            context: {
+                                // Data passed to context is available in page queries as GraphQL variables.
+                                //path: node.fields.path,
+                            },
+                            layout: node.fields.path === '/' ? 'index' : 'NoBanner'
+                        })
+
+                        //console.log('PAGE', node, component)
+                    } else if (node.fields.itemType === 'courses') {
+                        const slug = node.fields.path //.replace('courses', 'services')
+                        createPage({
+                            path: node.fields.path,
+                            component: path.resolve(`./src/templates/Gruppe.jsx`),
+                            context: {
+                                // Data passed to context is available in page queries as GraphQL variables.
+                                //path: node.fields.path,
+                            },
+                            layout: 'NoBanner'
+                        })
+
+                        //console.log('COURSE', node, slug)
+                    } else if (node.fields.itemType === 'news') {
+                        const slug = node.fields.path //.replace('courses', 'services')
+                        createPage({
+                            path: node.fields.path,
+                            component: path.resolve(`./src/templates/Veranstaltung.jsx`),
+                            context: {
+                                // Data passed to context is available in page queries as GraphQL variables.
+                                //path: node.fields.path,
+                            },
+                            layout: 'NoBanner'
+                        })
+
+                        //console.log('COURSE', node, slug)
                     }
-
-                    createPage({
-                        path: node.fields.path,
-                        component: component,
-                        context: {
-                            // Data passed to context is available in page queries as GraphQL variables.
-                            //path: node.fields.path,
-                        },
-                        layout: node.fields.path === '/' ? 'index' : 'NoBanner'
-                    })
-
-                //console.log('PAGE', node, component)
-                } else if (node.fields.itemType === 'courses') {
-                    const slug = node.fields.path //.replace('courses', 'services')
-                    createPage({
-                        path: node.fields.path,
-                        component: path.resolve(`./src/templates/Gruppe.jsx`),
-                        context: {
-                            // Data passed to context is available in page queries as GraphQL variables.
-                            //path: node.fields.path,
-                        },
-                        layout: 'NoBanner'
-                    })
-
-                //console.log('COURSE', node, slug)
-                }
+                })
+                resolve()
             })
-            resolve()
-        })
     })
 }
 
