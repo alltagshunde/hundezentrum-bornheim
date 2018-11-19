@@ -1,7 +1,7 @@
 ---
 title: Krimiwanderung mit Hund am 4. Advent
-date: 2018-11-19T12:38:00.000Z
-frontpageUntil: 2018-12-23T12:38:42.463Z
+date: 2018-11-17T12:38:00.000Z
+frontpageUntil: 2018-11-03T12:38:42.463Z
 description: '"Muss Weihnachten ausfallen?"'
 termin: '23. Dezember 2018, von 12:00 - 15:00 Uhr'
 place: >-
@@ -17,7 +17,9 @@ Nur noch wenige Tage bis Weihnachten und der Weihnachtsmann ist spurlos verschwu
 In seinem Haus stehen bergeweise Geschenke zur Auslieferung bereit, aber kein Weihnachtsmann weit und breit...\
 Wir rufen zu unserer SOKO Wuff nur die besten Ermittler mit ihren vierbeinigen Spürnasen auf, diesen weihnachtlichen Fall zu lösen und das Weihnachtsfest zu retten. \
 \
-Die reine Laufzeit der Strecke beträgt ca. 1 Stunde\
+Die reine Laufzeit der Strecke beträgt ca. 1 Stunde und ist auch mit kleinen Kindern gut zu bewältigen. Die teilnehmende Hunde sollten mindestens acht Monate alt sein.
+
+Für das leibliche Wohl der Ermittler wird unterwegs mit heißen Getränken und Keksen gesorgt.\
 \
-Meldet Euch schnell in der Dienststelle (s.o.), um uns bei diesem Fall zu unterstützen. \
+Meldet Euch schnell an, um uns bei diesem Fall zu unterstützen. \
 Es sind nur begrenzte Plätze verfügbar.
