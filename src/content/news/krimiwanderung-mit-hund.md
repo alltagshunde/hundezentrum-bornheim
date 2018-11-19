@@ -1,6 +1,6 @@
 ---
 title: Krimiwanderung mit Hund am 4. Advent
-date: 2018-11-17T12:38:00.000Z
+date: 2018-11-19T12:38:00.000Z
 frontpageUntil: 2018-12-23T12:38:42.463Z
 description: '"Muss Weihnachten ausfallen?"'
 termin: '23. Dezember 2018 '
