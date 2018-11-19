@@ -13,10 +13,11 @@ image: /static/img/soko-wuff.png
 ---
 **"Muss Weihnachten ausfallen?"**
 
-Nur noch wenige Tage bis Weihnachten und der Weihnachtsmann ist spurlos verschwunden. Das darf nicht wahr sein!\
+Nur noch wenige Tage bis Weihnachten und der Weihnachtsmann ist spurlos verschwunden. Das darf doch nicht wahr sein!\
 In seinem Haus stehen bergeweise Geschenke zur Auslieferung bereit, aber kein Weihnachtsmann weit und breit...\
-Wir rufen zu unserer SOKO Wuff nur die besten Ermittler mit ihren vierbeinigen Sprünasen auf diesen weihnachtlichen Fall zu lösen und das Weihnachtsfest zu retten. \
+Wir rufen zu unserer SOKO Wuff nur die besten Ermittler mit ihren vierbeinigen Spürnasen auf, diesen weihnachtlichen Fall zu lösen und das Weihnachtsfest zu retten. \
 \
 Die reine Laufzeit der Strecke beträgt ca. 1 Stunde\
 \
-Meldet Euch schriftlich in der Dienststelle um uns bei diesem Fall zu unterstützen, die Plätze sind begrenzt.
+Meldet Euch schnell in der Dienststelle (s.o.), um uns bei diesem Fall zu unterstützen. \
+Es sind nur begrenzte Plätze verfügbar.
