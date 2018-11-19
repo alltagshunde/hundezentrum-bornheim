@@ -3,7 +3,7 @@ title: Vortrag "Silvester naht!"
 date: '2018-11-18T12:14:17+01:00'
 frontpageUntil: '2018-12-04T12:14:17+01:00'
 description: Theoretischer Abendvortrag am 4.12.2018
-termin: 4.12.2018
+termin: 4. Dezember 2018
 place: 'Der Waldi – Artgerechtes Hundefutter, Haasbachstraße 1, 53332 Bornheim'
 price: '20 Euro pro Person, Begleitpersonen je 10 Euro'
 subscription: 'Anmeldung bitte per E-Mail an: info@hundezentrum-bornheim.de'
@@ -17,7 +17,7 @@ Zunächst erhaltet Ihr einen kurzen Einblick in die physiologischen Hintergründ
 \
 Am Ende des Vortrags werdet Ihr auf jeden Fall ein breiteres Verständnis davon haben, was Euer Hund so fühlt, wenn es knallt.\
 \
-**Der Vortrag richtet sich insbesondere an**
+**Der Vortrag richtet sich insbesondere an:**
 
 * Hundebesitzer, deren Hund unter einer Geräusch-Angst leidet, die ihn an Silvester ängstlich oder gar panisch reagieren lässt. 
 * Hundebesitzer denen das erste Silvester mit ihrem Hund bevorsteht und die noch nicht wissen wie ihr Hund reagieren wird. 
