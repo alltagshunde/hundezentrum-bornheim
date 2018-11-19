@@ -17,7 +17,7 @@ Nur noch wenige Tage bis Weihnachten und der Weihnachtsmann ist spurlos verschwu
 In seinem Haus stehen bergeweise Geschenke zur Auslieferung bereit, aber kein Weihnachtsmann weit und breit...\
 Wir rufen zu unserer SOKO Wuff nur die besten Ermittler mit ihren vierbeinigen Spürnasen auf, diesen weihnachtlichen Fall zu lösen und das Weihnachtsfest zu retten. \
 \
-Die reine Laufzeit der Strecke beträgt ca. 1 Stunde und ist auch mit kleinen Kindern gut zu bewältigen. Die teilnehmende Hunde sollten mindestens acht Monate alt sein.
+Die reine Laufzeit der Strecke beträgt ca. 1 Stunde und ist auch mit kleinen Kindern gut zu bewältigen. Die teilnehmenden Hunde sollten mindestens acht Monate alt sein.
 
 Für das leibliche Wohl der Ermittler wird unterwegs mit heißen Getränken und Keksen gesorgt.\
 \
