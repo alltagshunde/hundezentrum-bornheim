@@ -1,11 +1,11 @@
 ---
-title: '"Silvester naht!"'
+title: Vortrag "Silvester naht!"
 date: '2018-11-18T12:14:17+01:00'
 frontpageUntil: '2018-12-04T12:14:17+01:00'
 description: Theoretischer Abendvortrag am 4.12.2018
 termin: 4.12.2018
 place: 'Der Waldi – Artgerechtes Hundefutter, Haasbachstraße 1, 53332 Bornheim'
-price: '20 Euro pro Mensch-Hund-Team, Begleitpersonen je 5 Euro'
+price: '20 Euro pro Person, Begleitpersonen je 10 Euro'
 subscription: 'Anmeldung bitte per E-Mail an: info@hundezentrum-bornheim.de'
 image: /static/img/silvester3.png
 ---
