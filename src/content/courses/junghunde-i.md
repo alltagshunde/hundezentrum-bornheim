@@ -1,11 +1,11 @@
 ---
 title: 'Junghunde Grundkurs '
 termin: 'Samstags 11:30 Uhr'
-price: 130 Euro (1 Einzelstunde und 6 Gruppenstunden)
-position: 20
 description: >-
   Ausbau und Festigung der Grundkommandos unter Ablenkung, sowie Etablieren
   eines zuverlässigen Rückrufs und Leinenführigkeit.
+price: 140 Euro (1 Einzelstunde und 6 Gruppenstunden)
+position: 20
 image: /static/img/DSC_0008.JPG
 ---
 Der Junghunde Grundkurs umfasst eine Einzel- sowie sechs Gruppenstunden (3-6 Teilnehmer).
