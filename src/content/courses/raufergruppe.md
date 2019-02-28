@@ -7,7 +7,7 @@ description: >-
   Verhalten der Hunde in geregelte Bahnen zu lenken und nicht, wie der Name
   vielleicht vermuten lässt, dass die Hunde sich ungebremst raufen und prügeln
   dürfen.
-price: 15 Euro
+price: Aktuell keine Termine - Bei Interesse sprechen Sie uns gerne an!
 position: 60
 image: /static/img/Raufergruppe.png
 ---
