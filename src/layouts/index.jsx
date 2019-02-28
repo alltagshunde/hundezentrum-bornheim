@@ -10,6 +10,10 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
 
+const compareNewsDesc = (a, b) => {
+  return b.node.frontmatter.frontpageUntil - a.node.frontmatter.frontpageUntil;
+}
+
 export default ({ children, data, noBanner }) => <ThemeProvider theme={theme}>
   <Div css={{ minHeight: '100%' }}>
     <Helmet htmlAttributes={{ lang: 'de' }} titleTemplate="%s | Hundezentrum Bornheim" defaultTitle="Kompetenz rund um Ihren Hund | Hundezentrum Bornheim">
@@ -20,13 +24,14 @@ export default ({ children, data, noBanner }) => <ThemeProvider theme={theme}>
     <Navbar routes={data.menu.edges.map(edge => ({
       path: edge.node.fields.path,
       label: edge.node.frontmatter.title
-    }))} news={noBanner ? [] : ((data.news.edges && data.news.edges.length > 0) ? [{ ...data.news.edges[0].node.frontmatter, ...data.news.edges[0].node.fields }] : [])} />
+    }))} news={noBanner ? [] : ((data.news && data.news.edges && data.news.edges.length > 0) ? [{ ...data.news.edges.sort(compareNewsDesc)[0].node.frontmatter, ...data.news.edges.sort(compareNewsDesc)[0].node.fields }] : [])} />
     {!noBanner && <Banner sizes={data.file.childImageSharp.sizes} />}
     {children()}
     <Footer />
   </Div>
 </ThemeProvider>
 
+//TODO: readd frontpageUntil to news frontmatter
 export const query = graphql`
   query RouteQuery {
     site {
@@ -48,7 +53,7 @@ export const query = graphql`
         }
     }
 
-    news: allMarkdownRemark(filter: {fields: {itemType: {eq: "news"}}}, sort: { fields: [frontmatter___frontpageUntil], order: DESC }) {
+    news: allMarkdownRemark(filter: {fields: {itemType: {eq: "news"}}}) {
       edges {
         node {
           id
@@ -58,7 +63,6 @@ export const query = graphql`
           frontmatter {
             title
             description
-            frontpageUntil
           }
         }
       }

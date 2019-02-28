@@ -100,55 +100,55 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
-                result.data.allMarkdownRemark.edges.map(({ node }) => {
-                    if (node.fields.itemType === 'pages') {
-                        // loads e.g. Services.jsx or News.jsx
-                        let component = path.resolve(`./src/templates/${_.startCase(node.frontmatter.name)}.jsx`)
-                        if (!fs.existsSync(component)) {
-                            component = path.resolve(`./src/templates/Page.jsx`)
-                        }
-
-                        createPage({
-                            path: node.fields.path,
-                            component: component,
-                            context: {
-                                // Data passed to context is available in page queries as GraphQL variables.
-                                //path: node.fields.path,
-                            },
-                            layout: node.fields.path === '/' ? 'index' : 'NoBanner'
-                        })
-
-                        //console.log('PAGE', node, component)
-                    } else if (node.fields.itemType === 'courses') {
-                        const slug = node.fields.path //.replace('courses', 'services')
-                        createPage({
-                            path: node.fields.path,
-                            component: path.resolve(`./src/templates/Gruppe.jsx`),
-                            context: {
-                                // Data passed to context is available in page queries as GraphQL variables.
-                                //path: node.fields.path,
-                            },
-                            layout: 'NoBanner'
-                        })
-
-                        //console.log('COURSE', node, slug)
-                    } else if (node.fields.itemType === 'news') {
-                        const slug = node.fields.path //.replace('courses', 'services')
-                        createPage({
-                            path: node.fields.path,
-                            component: path.resolve(`./src/templates/Veranstaltung.jsx`),
-                            context: {
-                                // Data passed to context is available in page queries as GraphQL variables.
-                                //path: node.fields.path,
-                            },
-                            layout: 'NoBanner'
-                        })
-
-                        //console.log('COURSE', node, slug)
+            result.data.allMarkdownRemark.edges.map(({ node }) => {
+                if (node.fields.itemType === 'pages') {
+                    // loads e.g. Services.jsx or News.jsx
+                    let component = path.resolve(`./src/templates/${_.startCase(node.frontmatter.name)}.jsx`)
+                    if (!fs.existsSync(component)) {
+                        component = path.resolve(`./src/templates/Page.jsx`)
                     }
-                })
-                resolve()
+
+                    createPage({
+                        path: node.fields.path,
+                        component: component,
+                        context: {
+                            // Data passed to context is available in page queries as GraphQL variables.
+                            //path: node.fields.path,
+                        },
+                        layout: node.fields.path === '/' ? 'index' : 'NoBanner'
+                    })
+
+                    //console.log('PAGE', node, component)
+                } else if (node.fields.itemType === 'courses') {
+                    const slug = node.fields.path //.replace('courses', 'services')
+                    createPage({
+                        path: node.fields.path,
+                        component: path.resolve(`./src/templates/Gruppe.jsx`),
+                        context: {
+                            // Data passed to context is available in page queries as GraphQL variables.
+                            //path: node.fields.path,
+                        },
+                        layout: 'NoBanner'
+                    })
+
+                    //console.log('COURSE', node, slug)
+                } else if (node.fields.itemType === 'news') {
+                    const slug = node.fields.path //.replace('courses', 'services')
+                    createPage({
+                        path: node.fields.path,
+                        component: path.resolve(`./src/templates/Veranstaltung.jsx`),
+                        context: {
+                            // Data passed to context is available in page queries as GraphQL variables.
+                            //path: node.fields.path,
+                        },
+                        layout: 'NoBanner'
+                    })
+
+                    //console.log('COURSE', node, slug)
+                }
             })
+            resolve()
+        })
     })
 }
 

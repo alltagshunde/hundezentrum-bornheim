@@ -18,7 +18,7 @@ export default ({ data }) => <div>
   </Helmet>
   <Section title={data.markdownRemark.frontmatter.title} name={data.markdownRemark.fields.path} cssover={{ marginBottom: '1rem' }}>
     <Row>
-    {hasInfoBlock(data.markdownRemark.frontmatter) && <Col span={{ md: 6 / 12 }} offset={{ md: data.markdownRemark.frontmatter.image ? 0 : 3 / 12 }} css={{ textAlign: 'center' }} alignSelf="center">
+      {hasInfoBlock(data.markdownRemark.frontmatter) && <Col span={{ md: 6 / 12 }} offset={{ md: data.markdownRemark.frontmatter.image ? 0 : 3 / 12 }} css={{ textAlign: 'center' }} alignSelf="center">
         {data.markdownRemark.frontmatter.termin && <p>
           <div css={{ fontWeight: 'bold' }}>Wann</div>
           {data.markdownRemark.frontmatter.termin}
@@ -56,7 +56,7 @@ export default ({ data }) => <div>
   </Section>
 </div>
 
-
+//TODO: readd place,subscription to news frontmatter
 export const query = graphql`
   query EventQuery($path: String!) {
     site {
@@ -73,8 +73,8 @@ export const query = graphql`
         title
         termin
         price
-        place
-        subscription
+        
+        
         description
         image {
           childImageSharp {
