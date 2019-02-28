@@ -1,14 +1,14 @@
 ---
 title: Raufergruppe
-termin: Mittwochs 17 Uhr
-price: 15 Euro
-position: 60
+termin: Aktuell keine Termine - Bei Interesse sprechen Sie uns gerne an!
 description: >-
   Hinter dem verspielten Namen Raufergruppe verbirgt sich eine Gruppe speziell
   für Hunde, die übersteigertes Aggressionsverhalten zeigen. Ziel ist es das
   Verhalten der Hunde in geregelte Bahnen zu lenken und nicht, wie der Name
   vielleicht vermuten lässt, dass die Hunde sich ungebremst raufen und prügeln
   dürfen.
+price: 15 Euro
+position: 60
 image: /static/img/Raufergruppe.png
 ---
 Gemeinsam mit Ihnen wollen wir erreichen, dass…
