@@ -1,13 +1,13 @@
 ---
 title: Mantrailing
-termin: ab April 2018
-price: 'Einsteigerkurs 110 Euro (1x Theorie, 4 x Praxis a ca. 2 Stunden)'
-position: 70
+termin: 'Mittwoch und Freitag 18:00 - 20:00 Uhr'
 description: >-
   Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund
   im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und
   sucht anhand einer Geruchsprobe (z. B. ein Kleidungsstück) eine versteckte
   Person.
+price: '5-er Karte 125,00 Euro'
+position: 70
 image: /static/img/image-2018-02-14.png
 ---
 Unsere Hunde verfügen über einen außergewöhnlichen Geruchssinn, der es ihnen ermöglicht, der individuellen Geruchsspur eines vermissten Menschen auch nach längerer Zeit und über weite Strecken zu folgen. 
@@ -18,4 +18,4 @@ Mantrailing ist also Teamarbeit der besonderen Art, jeder gibt dabei das Beste, 
 
 Mantrailing bietet eine artgerechte Form der Beschäftigung und Auslastung und ist dabei für fast jeden Hund geeignet. In hohem Maße eignet es sich auch für Hunde mit Unsicherheiten gegenüber Menschen oder Artgenossen, sowie Umweltängsten, da es den Hund im Problemlösen schult und im Laufe des Trainings vermehrt eigenständiges Handeln erfordert. Es ist daher ausgesprochen geeignet, das Selbstvertrauen des Hundes nachhaltig auszubauen.
 
-Einsteigerkurse ab April 2018 - Bei Interesse sprechen Sie uns gerne an!
+Bei Interesse sprechen Sie uns gerne an!
