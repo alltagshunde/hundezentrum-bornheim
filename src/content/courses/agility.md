@@ -1,10 +1,10 @@
 ---
 title: Agility for Fun
-termin: Neuer Einsteigerkurs ab Mai 2019
+termin: Einsteigerkurs ab Mai 2019
 description: >-
   Agility schult den Mensch in seiner Körpersprache gegenüber dem Hund und
   fördert die harmonische Zusammenarbeit zwischen Mensch und Hund.
-price: Einsteigerkurs (5 Termine) 90 Euro
+price: '90 Euro (5 Termine) '
 position: 90
 image: /static/img/Agility.png
 ---
