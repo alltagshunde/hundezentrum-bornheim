@@ -1,12 +1,12 @@
 ---
 title: 'Körpersprachliches Longieren '
-termin: Ab Februar 2018
-price: 5er-Karte 90 Euro
-position: 80
+termin: Neue Termine in Planung
 description: >-
   Das körpersprachliche Longieren mit Hund ist eine einzigartige Möglichkeit,
   die Kommunikation und Verbundenheit zwischen Hund und Mensch herzustellen, zu
   verbessern und zu festigen.
+price: k. A.
+position: 80
 ---
 Das körpersprachliche Longieren mit Hund ist eine einzigartige Möglichkeit, die Kommunikation und Verbundenheit zwischen Hund und Mensch herzustellen, zu verbessern und zu festigen.\
 Tatsache ist jedoch, dass Verlässlichkeit und Verbindlichkeit der Kommunikation zwischen Menschen und Hunden erst im Nahbereich erzielt werden müssen, damit diese Verbundenheit auch in der Distanz fortbestehen kann. 
