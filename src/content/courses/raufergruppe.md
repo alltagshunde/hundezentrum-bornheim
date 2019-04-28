@@ -8,7 +8,7 @@ description: >-
   vielleicht vermuten lässt, dass die Hunde sich ungebremst raufen und prügeln
   dürfen.
 price: k. A.
-position: 60
+position: 120
 image: /static/img/Raufergruppe.png
 ---
 Gemeinsam mit Ihnen wollen wir erreichen, dass…
