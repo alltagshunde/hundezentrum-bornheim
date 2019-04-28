@@ -1,6 +1,6 @@
 ---
 title: Mantrailing
-termin: 'Mittwoch und Freitag 18:00 - 20:00 Uhr'
+termin: 'Mittwochs und freitags jeweils 18:00 - 20:00 Uhr'
 description: >-
   Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund
   im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und
