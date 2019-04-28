@@ -4,7 +4,7 @@ termin: Aktuell keine Termine - Bei Interesse sprechen Sie uns gerne an!
 description: >-
   Ein bunter Mix aus verschiedenen Beschäftigungsarten von Agility und
   Apportieren über Nasenarbeit bis hin zum Tricksen. 
-price: Aktuell keine Termine - Bei Interesse sprechen Sie uns gerne an!
+price: 'k. A. '
 position: 100
 image: /static/img/Beschaeftigung_Apport.png
 ---
