@@ -1,8 +1,8 @@
 ---
 title: Junghunde Übungsgruppe
-termin: 'Samstags 11:30 Uhr '
+termin: 'Samstag 11:30 Uhr '
 description: Weiterer Ausbau und Festigung des bisher erlernten Verhaltens.
-price: Trainings-Abo für 2 Monate 135 Euro
+price: 135 Euro (Abo 2 Monate)
 position: 30
 image: /static/img/Outdoor_Gruppe.png
 ---
