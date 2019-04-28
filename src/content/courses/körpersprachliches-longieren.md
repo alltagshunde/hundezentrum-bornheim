@@ -1,6 +1,6 @@
 ---
 title: 'Körpersprachliches Longieren '
-termin: Aktuell keine Termine - Bei Interesse sprechen Sie uns gerne an!
+termin: Neue Termine in Planung
 description: >-
   Das körpersprachliche Longieren mit Hund ist eine einzigartige Möglichkeit,
   die Kommunikation und Verbundenheit zwischen Hund und Mensch herzustellen, zu
