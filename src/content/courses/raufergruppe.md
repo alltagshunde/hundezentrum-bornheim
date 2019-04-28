@@ -7,7 +7,7 @@ description: >-
   Verhalten der Hunde in geregelte Bahnen zu lenken und nicht, wie der Name
   vielleicht vermuten lässt, dass die Hunde sich ungebremst raufen und prügeln
   dürfen.
-price: Aktuell keine Termine - Bei Interesse sprechen Sie uns gerne an!
+price: k. A.
 position: 60
 image: /static/img/Raufergruppe.png
 ---
