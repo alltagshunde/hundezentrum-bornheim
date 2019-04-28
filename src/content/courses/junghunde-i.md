@@ -1,6 +1,6 @@
 ---
 title: 'Junghunde Grundkurs '
-termin: 'Samstags 11:30 Uhr'
+termin: 'Samstags 13:00 Uhr'
 description: >-
   Ausbau und Festigung der Grundkommandos unter Ablenkung, sowie Etablieren
   eines zuverlässigen Rückrufs und Leinenführigkeit.
