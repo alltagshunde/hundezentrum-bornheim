@@ -14,4 +14,4 @@ In der Einzelstunde sprechen wir über den bisherigen Entwicklungsverlauf und ak
 
 In den Gruppenstunden lernen Sie, Ihrem Hund neue Fertigkeiten im Umgang beizubringen und notwendige Grenzen zu setzen. Elemente wie Leinenführigkeit sowie der zuverlässige Rückruf stehen hier im Mittelpunkt. Durch soziales Miteinander-Arbeiten und gelingende Kommunikation entwickelt sich zunehmend Vertrauen in das verlässliche Verhalten des Hundes. Damit wird es möglich, dem Hund den notwendigen Freiraum zu lassen.
 
-Einstiegsvoraussetzung ist die vorherige Teilnahme an unserer Welpengruppe oder 1-2 Einzelstunden.
+Einstiegsvoraussetzung ist die vorherige Teilnahme an unserer Welpengruppe oder Erarbeitung der entsprechenden Grundlagen in 1-2 Einzelstunden.
