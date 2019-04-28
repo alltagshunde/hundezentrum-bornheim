@@ -1,13 +1,13 @@
 ---
 title: Physiogility
-termin: neuer Kurs ab Juli 2019
+termin: Neuer Kurs ab Juli 2019
 description: >-
   "Physiogility" beinhaltet Elemente aus dem Agility, statt Schnelligkeit und
   sportlichem Ehrgeiz stehen jedoch vielmehr Spaß, Vertrauen und Teamgeist im
   Vordergrund. Das Training bietet daher eine ideale körperliche und geistige
   Auslastung mit dem Fokus auf Ruhe und Konzentration. 
-price: Kurs á 8 Termine - 145 Euro
-position: 110
+price: 145 Euro (8 Termine)
+position: 60
 image: ''
 ---
 "_Physiogility_" beinhaltet Elemente aus dem Agility, ist aber dahingehend abgeändert, dass statt Schnelligkeit und sportlichem Ehrgeiz, vielmehr Spaß, Vertrauen und Teamgeist im Vordergrund stehen. Das Angebot richtet sich daher an alle Menschen, die ihren Hunden eine gesunde körperliche und geistige Auslastung mit dem Fokus auf Ruhe und Konzentration, bieten möchten. 
