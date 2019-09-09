@@ -1,6 +1,6 @@
 ---
 title: Agility for Fun
-termin: Einsteigerkurs ab Mai 2019
+termin: Ab November Winterpause!
 description: >-
   Agility schult den Mensch in seiner Körpersprache gegenüber dem Hund und
   fördert die harmonische Zusammenarbeit zwischen Mensch und Hund.
