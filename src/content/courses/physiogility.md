@@ -1,19 +1,19 @@
 ---
 title: Physiogility
-termin: Neuer Kurs ab Juli 2019
+termin: Neuer Kurs ab Oktober 2019
 description: >-
-  "Physiogility" beinhaltet Elemente aus dem Agility, statt Schnelligkeit und
-  sportlichem Ehrgeiz stehen jedoch vielmehr Spaß, Vertrauen und Teamgeist im
-  Vordergrund. Das Training bietet daher eine ideale körperliche und geistige
-  Auslastung mit dem Fokus auf Ruhe und Konzentration. 
-price: 145 Euro (8 Termine)
+  In diesem Kurs werden durch aktives Bewegungstraining, Beweglichkeit und
+  Muskelaufbau, sowie Koordination und Körpergefühl unserer Hunde gefördert. 
+price: 85 Euro (4 Termine)
 position: 60
 image: ''
 ---
-"_Physiogility_" beinhaltet Elemente aus dem Agility, ist aber dahingehend abgeändert, dass statt Schnelligkeit und sportlichem Ehrgeiz, vielmehr Spaß, Vertrauen und Teamgeist im Vordergrund stehen. Das Angebot richtet sich daher an alle Menschen, die ihren Hunden eine gesunde körperliche und geistige Auslastung mit dem Fokus auf Ruhe und Konzentration, bieten möchten. 
+In diesem Kurs werden durch aktives Bewegungstraining, Beweglichkeit und Muskelaufbau, sowie Koordination und Körpergefühl unserer Hunde gefördert. 
 
-Vom einfachen "Fun-Parcours" bis hin zu anspruchsvolleren Übungen an verschiedenen Geräten und unterschiedlichen Schwierigkeitsgraden bietet "_Physiogility_" spannende Beschäftigung mit einer großen Bandbreite an Gestaltungsmöglichkeiten und stellt Hund und Halter somit stets vor neue Herausforderungen. 
+Hervorragend eignet sich der Kurs daher insbesondere für Hunde, die bereits unter Problemen am Bewegungsapparat leiden oder Hunde für die – aufgrund ihrer körperlichen oder rassespezifischen Disposition – ein erhöhtes Risiko besteht, Probleme mit dem Bewegungsapparat zu entwickeln. In vielen dieser Fälle kann ein regelmäßiges und an den Hund angepasstes Bewegungstraining die Beschwerden mildern und das Voranschreiten der Beschwerden sogar verzögern. Aber auch für Junghunde besonders großer, schnell wachsender Rassen kann ein entsprechendes Training
 
-Durch Konzentrations- und Koordinationsübungen schult es das Körperbewusstsein und trägt zur Stärkung der Tiefenmuskulatur bei.  Dadurch eignet es sich auch hervorragend für Hunde mit akuten Beschwerden oder Beeinträchtigungen des Bewegungsapparats bzw. deren Vorbeugung. Ganz nebenbei fördert das Training aber auch das Selbstvertrauen des Hundes, sowie eine vertrauensvolle Beziehung zwischen Mensch und Hund. 
+sinnvoll sein und z. B. Körpergefühl und Selbstwahrnehmung des Hundes verbessern.
 
-Im Hinblick auf therapeutische Besonderheiten, d. h. evtl. Erkrankungen und Einschränkungen des Bewegungsapparates bzw. Tipps zu deren Prophylaxe, wird der Kurs an zwei Terminen durch Hundephysiotherapeutin und Tierheilpraktikerin Janina Nowak (www. gesunderhundnowk.de) begleitet.
+Die Basis bilden physiotherapeutische Übungen zur Stärkung der Rückenmuskulatur, sowie der Vorder- und Hintergliedmaßen. Ergänzt werden diese durch einfache Übungen zur Schulung der Koordination und des Körpergefühls. Alle Übungen können je nach körperlicher Konstitution und Alter der teilnehmenden Hunde entsprechend angepasst werden. Für die meisten Übungen werden keine zusätzlichen Trainingsgeräte benötigt bzw. können diese durch einfache Utensilien wie Buch, Besen etc. ersetzt werden. Dadurch sind sie leicht in den Alltag übertragbar und können zuhause oder auch auf dem Spaziergang in das normale Beschäftigungsrepertoire aufgenommen werden. 
+
+Betreut wird dieser Kurs zusätzlich durch unsere Kollegin Janina Nowak, Physiotherapeutin & Tierheilpraktikerin in eigener Praxis (www.gesunderhundnowak.de).
