@@ -9,7 +9,7 @@ description: >-
   weiterer Gerüche wie z. B. Gewürze, Lebensmittel, Kosmetika etc. stetig weiter
   zu schulen und herauszufordern. Eine prima Beschäftigung – auch bei
   Regenwetter!
-price: 105 Euro
+price: 105 Euro (5 Termine)
 position: 100
 image: /static/img/schnüffelkurs.jpg
 ---
