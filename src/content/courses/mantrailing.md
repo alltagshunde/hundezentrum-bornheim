@@ -1,12 +1,12 @@
 ---
 title: Mantrailing
-termin: 'Mittwoch und Donnerstag 18:00 Uhr'
+termin: 'Mittwoch 18:30 Uhr und Freitag 18:00 Uhr'
 description: >-
   Bei der Personensuche - dem sogenannten Mantrailing - arbeiten Mensch und Hund
   im Team. Der Hund lernt sich auf einen bestimmten Geruch zu konzentrieren und
   sucht anhand einer Geruchsprobe (z. B. ein Kleidungsstück) eine versteckte
   Person.
-price: '5-er Karte 120,00 Euro'
+price: '25,00 Euro pro Termin und Hund'
 position: 70
 image: /static/img/image-2018-02-14.png
 ---
