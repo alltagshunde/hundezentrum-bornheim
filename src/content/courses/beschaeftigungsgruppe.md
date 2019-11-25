@@ -1,13 +1,13 @@
 ---
 title: Geruchsdifferenzierung - Schnüffel dich glücklich!
-termin: Neuer Kurs ab Oktober 2019
+termin: 'Neuer Kurs ab Januar 2020 - jeweils dienstags 18:00 Uhr'
 description: >-
   Ich zeige dir, wie Du deinem Hund eine natürliche Form der Auslastung und
   Kopfarbeit anbieten, diese in deinen ganz persönlichen Alltag übertragen und
   die feine Nase deines Hundes zudem anhand weiterer Gerüche wie z. B. Gewürze,
   Lebensmittel, Kosmetika etc. stetig weiter zu schulen und herauszufordern.
   Eine prima Beschäftigung – auch bei Regenwetter!
-price: 105 Euro (5 Termine)
+price: '100,00 Euro (5 Termine)'
 position: 100
 image: /static/img/schnüffelkurs.jpg
 ---
