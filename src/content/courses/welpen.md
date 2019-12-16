@@ -5,7 +5,7 @@ description: >-
   Die Teilnahme an der Welpengruppe ist je nach Rasse für Hunde im Alter von 8
   bis ca. 16-20 Wochen sinnvoll. Hier steht vor allem das Spielen der Hunde
   untereinander, sowie das Erlernen erster Grundkommandos im Vordergrund. 
-price: 'Schnupperstunde 10 Euro, 5er-Karte 60 Euro'
+price: 'Schnupperstunde 15 Euro, 5er-Karte 70 Euro'
 position: 10
 image: /static/img/Welpen.png
 ---
