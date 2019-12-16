@@ -4,7 +4,7 @@ termin: Neuer Kurs im Frühjahr 2020
 description: >-
   In diesem Kurs werden durch aktives Bewegungstraining, Beweglichkeit und
   Muskelaufbau, sowie Koordination und Körpergefühl unserer Hunde gefördert. 
-price: 100 Euro (4 Termine)
+price: '100,00 Euro (4 Termine)'
 position: 60
 image: ''
 ---
