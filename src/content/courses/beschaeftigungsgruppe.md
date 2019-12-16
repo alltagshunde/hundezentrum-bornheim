@@ -1,6 +1,6 @@
 ---
 title: Geruchsdifferenzierung - Schnüffel dich glücklich!
-termin: 'Neuer Kurs ab Januar 2020 - jeweils dienstags 18:00 Uhr'
+termin: 'Neuer Kurs ab Ende Januar 2020 - 5 Termine 14 tägig, dienstags 18:00 Uhr '
 description: >-
   Ich zeige dir, wie Du deinem Hund eine natürliche Form der Auslastung und
   Kopfarbeit anbieten, diese in deinen ganz persönlichen Alltag übertragen und
