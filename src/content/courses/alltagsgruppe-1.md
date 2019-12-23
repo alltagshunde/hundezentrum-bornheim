@@ -8,10 +8,10 @@ price: '5er Karte 75,00 Euro'
 position: 120
 image: ''
 ---
-Die Trainingsinhalte dieser Gruppe richten sich nach den Wünschen der Teilnehmer. Die Grunderziehung des Hundes sollte  weitestgehend gefestigt sein. \
-nd nur im Ausnahmefall auf dem eingezäunten Hundeplatz in Bornheim-Dersdorf statt. 
+In dieser Gruppe werden die bisher erarbeiteten Inhalte aus Junghundekursen oder Einzelstunden unter Alltagsbedingungen und Ablenkungen gefestigt und ausgebaut. Die Grunderziehung des Hundes sollte jedoch bereits weitestgehend gefestigt sein. 
+
+Die Trainingsinhalte richten sich dabei nach den Wünschen der Teilnehmer. So können neben klassischen Erziehungsthemen wie der Leinenführigkeit oder Freifolge unter hoher Ablenkung oder dem Rückruf aus einer Gruppe spielender Hunde, auch Elemente aus den verschiedenen Beschäftigungsbereichen (Agility, Nasenarbeit, Dummytraining etc.) Thema der Stunde sein. 
 
 So ergibt sich ein buntes Potpurri aus Beschäftigung und Erziehung und es kommt keine Langeweile auf. 
 
-Einstiegsvoraussetzung ist die vorherige Teilnahme am Junghunde Grundkurs bzw. der Junghunde Übungsgruppe oder Erarbeitung der entsprechenden Grundlagen in Einzelstunden.\
-In der Alltagsgruppe werden die Inhalte aus den bisher absolvierten (Junghunde-) Kursen bzw. Einzelstunden überpüft und unter Alltagsbedingungen gefestigt.
+Einstiegsvoraussetzung ist die vorherige Teilnahme am Junghundekurs oder Erarbeitung der entsprechenden Grundlagen in Einzelstunden.
