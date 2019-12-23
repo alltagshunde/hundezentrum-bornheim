@@ -4,7 +4,7 @@ termin: 'ab 21.Januar 2020, jeweils 14 tägig dienstags 18:00 - 19:00 Uhr'
 description: >-
   Ein buntes Potpurri aus Alltagstraining und Beschäftigung für Hunde, deren
   Grunderziehung schon auf festen Füßen steht. 
-price: '5er Karte 75,00 Euro'
+price: '5er Karte 90,00 Euro'
 position: 120
 image: ''
 ---
