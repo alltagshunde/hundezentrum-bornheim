@@ -1,7 +1,7 @@
 ---
 title: '***** Vorübergehend geschlossen! *****'
 date: 2020-03-18T12:18:15.105Z
-frontpageUntil: 2020-03-18T12:18:15.164Z
+frontpageUntil: 2020-04-19T11:18:15.164Z
 description: >-
   Hundeschulbetrieb aufgrund von Corona Maßnahmen bis auf weiteres komplett
   eingestellt!
