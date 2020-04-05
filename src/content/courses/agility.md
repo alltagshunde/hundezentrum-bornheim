@@ -1,6 +1,6 @@
 ---
 title: Agility for Fun
-termin: Aktuell Winterpause bis voraussichtlich März / April 2020 (wetterabhängig)
+termin: Aktuell Winterpause bis voraussichtlich April 2020 (wetterabhängig)
 description: >-
   Agility schult den Mensch in seiner Körpersprache gegenüber dem Hund und
   fördert die harmonische Zusammenarbeit zwischen Mensch und Hund.
