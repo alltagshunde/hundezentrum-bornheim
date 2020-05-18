@@ -32,7 +32,7 @@ export default ({ data }) => <div>
     {data.allMarkdownRemark && data.allMarkdownRemark.edges.sort(compareNewsDesc).map(({ node }, index) => <div key={node.id}>
       <NewsLink to={node.fields.path}>
         <Row css={{ flexDirection: index % 2 == 0 ? 'row' : 'row-reverse !important' }}>
-          <Col span={{ md: 6 / 12 }} css={{ textAlign: 'center' }} alignSelf="center">
+          <Col css={{ textAlign: 'center' }} alignSelf="center">
             <H2>
               {node.frontmatter.title}
             </H2>
@@ -42,9 +42,9 @@ export default ({ data }) => <div>
             <p dangerouslySetInnerHTML={{ __html: node.excerpt }}>
             </p>
           </Col>
-          <Col span={{ md: 6 / 12 }} alignSelf="center">
+          {node.frontmatter.image && <Col span={{ md: 6 / 12 }} alignSelf="center">
             <Img sizes={node.frontmatter.image.childImageSharp.sizes} />
-          </Col>
+          </Col>}
         </Row>
       </NewsLink>
       {<Row>
